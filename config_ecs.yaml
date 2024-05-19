@@ -1,0 +1,44 @@
+plugins:
+  ## ---------------------------------------------------------------
+  # 底层 ecs
+  # ecs_cn
+  - tag: ecs_cn
+    type: sequence
+    args:
+      - exec: ecs 223.68.90.0/24
+      - exec: ecs 2409:8a20::1/48
+
+  # ecs_us
+  - tag: ecs_us
+    type: sequence
+    args:
+      - exec: ecs 209.141.33.1/24
+      - exec: ecs 2605:6400:4a22::1/48
+
+  # ecs_hk
+  - tag: ecs_hk
+    type: sequence
+    args:
+      - exec: ecs 1.36.100.62/24
+      - exec: ecs 2404:c800::1/48
+
+  ## ---------------------------------------------------------------
+  ## ---------------------------------------------------------------
+  # 应用层 ecs
+  # ecs_local，cn_ip
+  - tag: ecs_local
+    type: sequence
+    args:
+      - exec: $ecs_cn
+
+  # ecs_remote，us_ip
+  - tag: ecs_remote
+    type: sequence
+    args:
+      - exec: $ecs_us
+
+  # ecs_gobal，hk_ip
+  - tag: ecs_gobal
+    type: sequence
+    args:
+      - exec: $ecs_hk

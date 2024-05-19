@@ -1,0 +1,125 @@
+plugins:
+  # -------------------------------------------------------------------
+  # 域名集
+  # dual_stlack域名,cn
+  - tag: domain_dual_stlack_forward_local
+    type: domain_set
+    args:
+      files:
+        - "./custom_set/local/domain_dual_stlack_forward_local_custom.txt"
+        - "./custom_set/local/domain_dual_stlack_forward_local_game.txt"  
+        - "./custom_set/local/domain_dual_stlack_forward_local_network.txt"          
+
+
+  # dual_stlack域名，gobal，gobal+cn
+  - tag: domain_dual_stlack_forward_gobal
+    type: domain_set
+    args:
+      files:
+        - "./custom_set/gobal/domain_dual_stlack_forward_gobal_custom.txt"
+        - "./custom_set/gobal/domain_dual_stlack_forward_gobal_resourse.txt"      
+        - "./custom_set/gobal/domain_dual_stlack_forward_gobal_network.txt"               
+        - "./custom_set/gobal/domain_dual_stlack_forward_gobal_bt.txt"
+        - "./custom_set/gobal/domain_dual_stlack_forward_gobal_stun.txt"
+        - "./custom_set/gobal/domain_dual_stlack_forward_gobal_game.txt"        
+        - "./geo_set/geosite_category-pt.txt"
+        - "./geo_set/geosite_category-public-tracker.txt"    
+        - "./geo_set/geosite_xbox.txt"          
+        - "./geo_set/geosite_cloudflare.txt"  
+        - "./geo_set/geosite_googlefcm.txt"               
+
+  # prefer_ipv4/6域名，代理，remote+gobal
+  - tag: domain_prefer_proxy
+    type: domain_set
+    args:
+      files:
+        - "./custom_set/other/domain_prefer_proxy.txt"
+
+  # prefer_ipv4/6域名，direct
+  - tag: domain_prefer_direct
+    type: domain_set
+    args:
+      files:
+        - "./custom_set/other/domain_prefer_direct.txt"
+        - "./geo_set/geosite_tld-cn.txt"
+        - "./geo_set/geosite_apple-cn.txt"
+        - "./geo_set/geosite_google-cn.txt"
+        - "./geo_set/geosite_win-update.txt"
+        - "./geo_set/geosite_category-games@cn.txt"       
+
+  # prefer_ipv4/6域名，gfw，remote+gobal
+  - tag: domain_prefer_gfw
+    type: domain_set
+    args:
+      files:
+        - "./geo_set/geosite_gfw.txt"
+        # - "./geo_set/geosite_geolocation-!cn.txt"      
+
+  # prefer_ipv4/6域名，cn
+  - tag: domain_prefer_cn
+    type: domain_set
+    args:
+      files:
+        - "./geo_set/geosite_cn.txt"
+        # - "./geo_set/geosite_china-list.txt"        
+
+  # -------------------------------------------------------------------
+  # IP集
+  # 国内 IP
+  - tag: ip_cn
+    type: ip_set
+    args:
+      files:
+        - "./geo_set/geoip_cn.txt"
+
+  # cloudflare IP
+  - tag: ip_cloudflare
+    type: ip_set
+    args:
+      files:
+        - "./geo_set/geoip_cloudflare.txt"
+
+  # fastly IP
+  - tag: ip_fastly
+    type: ip_set
+    args:
+      files:
+        - "./geo_set/geoip_fastly.txt" 
+
+  # cloudfront IP
+  - tag: ip_cloudfront
+    type: ip_set
+    args:
+      files:
+        - "./geo_set/geoip_cloudfront.txt"
+
+  # -------------------------------------------------------------------
+  # 特定集
+  # 私有域名
+  - tag: domain_private
+    type: domain_set
+    args:
+      files:
+        - "./geo_set/geosite_private.txt"
+
+  # 反向解析
+  - tag: local_ptr
+    type: domain_set
+    args:
+      files:
+        - "./custom_set/other/local-ptr.txt"
+
+  # 域名查询重定向结果
+  - tag: redirect
+    type: redirect
+    args:
+      files:
+        - "./custom_set/other/redirect.txt"
+
+  # 自定义 Hosts 重写
+  - tag: hosts
+    type: hosts
+    args:
+      files:
+        - "./custom_set/other/hosts.txt"
+  # -------------------------------------------------------------------
