@@ -73,12 +73,14 @@ plugins:
         exec: $ecs_cn_ipv6
       - matches: "!qtype 28"
         exec: $ecs_cn_ipv4
+      - exec: return
 
   # ecs_remote，us_ip
   - tag: ecs_remote
     type: sequence
     args:
       # - exec: $ecs_us_ipv4
+      - exec: return
 
   # ecs_gobal，hk_ip
   - tag: ecs_gobal
@@ -92,3 +94,4 @@ plugins:
         exec: $ecs_hk_ipv6
       - matches: "!qtype 28"
         exec: $ecs_hk_ipv4
+      - exec: return

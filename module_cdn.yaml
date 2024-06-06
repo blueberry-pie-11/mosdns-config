@@ -1,0 +1,41 @@
+plugins:
+  #----------------------------------
+  # cdn优选策略
+  # cloudflare 优选
+  - tag: redirect_bestip_cloudflare
+    type: redirect
+    args:
+      rules:
+        # 格式 [域名匹配规则] [重定向至域名]
+        # keyword: mirror.apad.pro 。空 keyword 能匹配一切，注意": "后有空格。
+        - qq.com mirror.apad.pro
+      # files: # 从文件载入规则
+      #   - ./rediect.txt
+
+  # cloudfront 优选
+  - tag: redirect_bestip_cloudfront
+    type: redirect
+    args:
+      rules:
+        # 格式 [域名匹配规则] [重定向至域名]
+        # keyword: mirror.apad.pro 。空 keyword 能匹配一切，注意": "后有空格。
+        - qq.com mirror.apad.pro
+      # files: # 从文件载入规则
+      #   - ./rediect.txt
+
+  #  cdn 优选处理sequence
+  - tag: change_cdn_ip_sequence
+    type: sequence
+    args:
+      # cloudflare 优选
+      - matches:
+          - resp_ip $ip_cloudflare
+          - has_wanted_ans # 应答的 ANSWER 中包含和 QUESTOIN 类型相同的 record
+        exec: $redirect_bestip_cloudflare
+
+      # cloudfront 优选
+      - matches:
+          - resp_ip $ip_cloudfront
+          - has_wanted_ans
+        exec: $redirect_bestip_cloudfront
+      - exec: return

@@ -26,7 +26,9 @@ plugins:
       # 执行reject
       - matches: mark 1001
         exec: reject 3
-
+      # 返回上级sequence
+      # - exec: return
+      - exec: jump has_resp_sequence
   # -------------------------------------------------------------------
   #
   # 域名全栈查询，无A/AAAA过滤，允许https等类型查询
@@ -41,6 +43,8 @@ plugins:
         exec: $ecs_local
       - matches: mark 2001
         exec: $forward_local
+      # - exec: return
+      - exec: jump has_resp_sequence
 
   # dual_stlack域名，gobal
   - tag: query_dual_stlack_gobal
@@ -52,7 +56,8 @@ plugins:
         exec: $ecs_gobal
       - matches: mark 2002
         exec: $fallback_forward_gobal_and_local_sequence
-
+      # - exec: return
+      - exec: jump has_resp_sequence
   # -------------------------------------------------------------------
   #
   # 域名prefer_ipv4/6查询，存在A/AAAA单栈过滤，可能存在https等类型过滤
@@ -70,7 +75,9 @@ plugins:
       - matches: mark 2003
         exec: $fallback_forward_remote_and_gobal_sequence
       # 返回国内 ip 则 drop_resp
-      - exec: $drop_cn_ip_sequence
+      - exec: jump drop_cn_ip_sequence
+      # - exec: return
+      - exec: jump has_resp_sequence
 
   # prefer_ipv4/6域名，direct
   - tag: query_prefer_direct
@@ -84,6 +91,8 @@ plugins:
         exec: $ecs_local
       - matches: mark 2004
         exec: $forward_local
+      # - exec: return
+      - exec: jump has_resp_sequence
 
   # prefer_ipv4/6域名，gfw，remote+gobal
   - tag: query_prefer_gfw
@@ -98,7 +107,9 @@ plugins:
       - matches: mark 2005
         exec: $fallback_forward_remote_and_gobal_sequence
       # 返回国内 ip 则 drop_resp
-      - exec: $drop_cn_ip_sequence
+      - exec: jump drop_cn_ip_sequence
+      # - exec: return
+      - exec: jump has_resp_sequence
 
   # prefer_ipv4/6域名，cn
   - tag: query_prefer_cn
@@ -112,6 +123,8 @@ plugins:
         exec: $ecs_local
       - matches: mark 2006
         exec: $forward_local
+      # - exec: return
+      - exec: jump has_resp_sequence
 
   # -------------------------------------------------------------------
   #
@@ -126,7 +139,9 @@ plugins:
       - exec: $ecs_remote
       - exec: $fallback_forward_remote_and_gobal_sequence
       # 返回国内 ip 则 drop_resp
-      - exec: $drop_cn_ip_sequence
+      - exec: jump drop_cn_ip_sequence
+      # - exec: return
+      - exec: jump has_resp_sequence
 
   # 兜底查询，cn查询，仅允许cn_ip
   - tag: query_final_cn_ip
@@ -136,7 +151,8 @@ plugins:
       - exec: $ecs_local
       - exec: $forward_local
       # 返回非国内 ip 则 drop_resp
-      - exec: $drop_non_cn_ip_sequence
-
+      - exec: jump drop_non_cn_ip_sequence
+      # - exec: return
+      - exec: jump has_resp_sequence
   # -------------------------------------------------------------------
   # -------------------------------------------------------------------

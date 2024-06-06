@@ -15,8 +15,9 @@ include:
   - "./module_ecs.yaml"
   - "./module_dns.yaml"
   - "./module_ttl.yaml"
+  - "./module_cdn.yaml"
   - "./module_forward.yaml"
-  - "./module_resp_checker.yaml"  
+  - "./module_resp_checker.yaml"
   - "./module_query.yaml"
 
 plugins:
@@ -45,8 +46,8 @@ plugins:
     args:
       # --------------------------------
       # 屏蔽特定dns类型查询
-      - exec: $query_reject
-      - exec: jump has_resp_sequence
+      - exec: jump query_reject
+
       # --------------------------------
       # host
       - exec: $hosts
@@ -61,37 +62,36 @@ plugins:
       # - exec: $lazy_cache
       # - exec: jump has_resp_sequence
       # --------------------------------
-      # prefer_ipv4/6域名解析        
+      # prefer_ipv4/6域名解析
       # 查询代理域名，remote+gobal，prefer_ipv4
-      - exec: $query_prefer_proxy
-      - exec: jump has_resp_sequence
+      - exec: jump query_prefer_proxy
+
       # 查询直连域名
-      - exec: $query_prefer_direct
-      - exec: jump has_resp_sequence   
+      - exec: jump query_prefer_direct
+
       # --------------------------------
       # dual_stack域名解析
       # 查询全栈域名,local
-      - exec: $query_dual_stlack_local
-      - exec: jump has_resp_sequence
+      - exec: jump query_dual_stlack_local
+
       # 查询全栈域名,gobal
-      - exec: $query_dual_stlack_gobal
-      - exec: jump has_resp_sequence
+      - exec: jump query_dual_stlack_gobal
+
       # --------------------------------
-      # prefer_ipv4/6域名解析      
+      # prefer_ipv4/6域名解析
       # 查询gfw域名
-      - exec: $query_prefer_gfw
-      - exec: jump has_resp_sequence           
+      - exec: jump query_prefer_gfw
+
       # 查询cn域名
-      - exec: $query_prefer_cn
-      - exec: jump has_resp_sequence
+      - exec: jump query_prefer_cn
+
       # --------------------------------
       # 非域名列表内的域名查询
       # 兜底查询，fallback查询，no_cn_ip
-      - exec: $query_final_non_cn_ip
-      - exec: jump has_resp_sequence
+      - exec: jump query_final_non_cn_ip
+
       # 兜底查询，本地查询，cn_ip
-      - exec: $query_final_cn_ip
-      - exec: jump has_resp_sequence
+      - exec: jump query_final_cn_ip
 
   # 启动 udp 服务器。
   - tag: udp_server

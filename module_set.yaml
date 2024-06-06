@@ -51,7 +51,6 @@ plugins:
     args:
       files:
         - "./geo_set/geosite_gfw.txt"
-        # - "./geo_set/geosite_geolocation-!cn.txt"
 
   # prefer_ipv4/6域名，cn
   - tag: domain_prefer_cn

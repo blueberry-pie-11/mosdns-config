@@ -1,69 +1,4 @@
 plugins:
-  # -------------------------------------------------------------------
-  # dns_cn
-  # dns_cn 查询 ecs_local sequence
-  - tag: forward_local_ipv4_and_ipv6_ecs_local_sequence
-    type: sequence
-    args:
-      - exec: $ecs_local
-      - exec: $forward_local
-
-  # dns_cn 查询 ecs_local sequence，prefer_ipv6
-  - tag: forward_local_ipv6_ecs_local_sequence
-    type: sequence
-    args:
-      - exec: prefer_ipv6
-      - exec: $ecs_local
-      - exec: $forward_local
-
-  # dns_cn 查询 ecs_gobal sequence
-  - tag: forward_local_ipv4_and_ipv6_ecs_gobal_sequence
-    type: sequence
-    args:
-      - exec: $ecs_gobal
-      - exec: $forward_local
-
-  # -------------------------------------------------------------------
-  # dns_remote
-  # dns_remote 查询 ecs_remote sequence，prefer_ipv4
-  - tag: forward_remote_ipv4_ecs_remote_sequence
-    type: sequence
-    args:
-      - exec: prefer_ipv4
-      - exec: $ecs_remote
-      - exec: $forward_remote
-
-  # dns_remote 查询 ecs_local sequence，prefer_ipv4
-  - tag: forward_remote_ipv4_and_ipv6_ecs_local_sequence
-    type: sequence
-    args:
-      - exec: $ecs_local
-      - exec: $forward_remote
-
-  # -------------------------------------------------------------------
-  # dns_gobal
-  # dns_gobal 查询 ecs_local sequence
-  - tag: forward_gobal_ipv4_and_ipv6_ecs_local_sequence
-    type: sequence
-    args:
-      - exec: $ecs_local
-      - exec: $forward_gobal
-
-  # dns_gobal 查询 ecs_remote sequence，prefer_ipv4
-  - tag: forward_gobal_ipv4_ecs_remote_sequence
-    type: sequence
-    args:
-      - exec: prefer_ipv4
-      - exec: $ecs_remote
-      - exec: $forward_gobal
-
-  # dns_gobal 查询 ecs_gobal sequence
-  - tag: forward_gobal_ipv4_and_ipv6_ecs_gobal_sequence
-    type: sequence
-    args:
-      - exec: $ecs_gobal
-      - exec: $forward_gobal
-
   #----------------------------------------------------------
   #
   # fallback子序列
@@ -74,7 +9,7 @@ plugins:
     args:
       primary: forward_gobal
       secondary: forward_local
-      threshold: 400
+      threshold: 500
       always_standby: false
 
   # 域名 fallback，先remote查询，超时后gobal查询
@@ -92,5 +27,5 @@ plugins:
     args:
       primary: forward_gobal
       secondary: forward_remote
-      threshold: 400
+      threshold: 500
       always_standby: false
