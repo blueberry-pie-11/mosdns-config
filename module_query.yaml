@@ -1,0 +1,142 @@
+plugins:
+  # -------------------------------------------------------------------
+  # dns查询流程
+  #
+  # 屏蔽特定类型dns记录
+  - tag: query_reject
+    type: sequence
+    args:
+      # 屏蔽反向查询
+      - matches:
+          - qtype 12
+          - qname $local_ptr
+        exec: mark 1001
+      # 屏蔽 ANY
+      - matches: qtype 255
+        exec: mark 1001
+      # 屏蔽private查询
+      - matches:
+          - qname $domain_private
+        exec: mark 1001
+      # 屏蔽以下列表域名的HTTPS记录
+      - matches:
+          - qtype 65
+          - "!qname { $domain_dual_stlack_local | $domain_dual_stlack_gobal | $domain_prefer_direct | $domain_prefer_cn }"
+        exec: mark 1001
+      # 执行reject
+      - matches: mark 1001
+        exec: reject 3
+
+  # -------------------------------------------------------------------
+  #
+  # 域名全栈查询，无A/AAAA过滤，允许https等类型查询
+  #
+  # dual_stlack域名，local
+  - tag: query_dual_stlack_local
+    type: sequence
+    args:
+      - matches: qname $domain_dual_stlack_local
+        exec: mark 2001
+      - matches: mark 2001
+        exec: $ecs_local
+      - matches: mark 2001
+        exec: $forward_local
+
+  # dual_stlack域名，gobal
+  - tag: query_dual_stlack_gobal
+    type: sequence
+    args:
+      - matches: qname $domain_dual_stlack_gobal
+        exec: mark 2002
+      - matches: mark 2002
+        exec: $ecs_gobal
+      - matches: mark 2002
+        exec: $fallback_forward_gobal_and_local_sequence
+
+  # -------------------------------------------------------------------
+  #
+  # 域名prefer_ipv4/6查询，存在A/AAAA单栈过滤，可能存在https等类型过滤
+  #
+  # prefer_ipv4/6域名，代理，remote+gobal
+  - tag: query_prefer_proxy
+    type: sequence
+    args:
+      - matches: qname $domain_prefer_proxy
+        exec: mark 2003
+      # - matches: mark 2003
+      #   exec: $prefer_ipv4
+      - matches: mark 2003
+        exec: $ecs_remote
+      - matches: mark 2003
+        exec: $fallback_forward_remote_and_gobal_sequence
+      # 返回国内 ip 则 drop_resp
+      - exec: $drop_cn_ip_sequence
+
+  # prefer_ipv4/6域名，direct
+  - tag: query_prefer_direct
+    type: sequence
+    args:
+      - matches: qname $domain_prefer_direct
+        exec: mark 2004
+      # - matches: mark 2004
+      #   exec: $prefer_ipv6
+      - matches: mark 2004
+        exec: $ecs_local
+      - matches: mark 2004
+        exec: $forward_local
+
+  # prefer_ipv4/6域名，gfw，remote+gobal
+  - tag: query_prefer_gfw
+    type: sequence
+    args:
+      - matches: qname $domain_prefer_gfw
+        exec: mark 2005
+      - matches: mark 2005
+        exec: prefer_ipv4
+      - matches: mark 2005
+        exec: $ecs_remote
+      - matches: mark 2005
+        exec: $fallback_forward_remote_and_gobal_sequence
+      # 返回国内 ip 则 drop_resp
+      - exec: $drop_cn_ip_sequence
+
+  # prefer_ipv4/6域名，cn
+  - tag: query_prefer_cn
+    type: sequence
+    args:
+      - matches: qname $domain_prefer_cn
+        exec: mark 2006
+      # - matches: mark 2006
+      #   exec: $prefer_ipv6
+      - matches: mark 2006
+        exec: $ecs_local
+      - matches: mark 2006
+        exec: $forward_local
+
+  # -------------------------------------------------------------------
+  #
+  # 非域名列表内的域名查询，优先使用remote+gobal查询，避免dns泄露
+  # forward_local禁止non_cn_ip记录响应，其它forward禁止cn_ip记录响应
+  #
+  # 兜底查询，fallback查询，仅允许non_cn_ip
+  - tag: query_final_non_cn_ip
+    type: sequence
+    args:
+      - exec: prefer_ipv4
+      - exec: $ecs_remote
+      - exec: $fallback_forward_remote_and_gobal_sequence
+      # 返回国内 ip 则 drop_resp
+      - exec: $drop_cn_ip_sequence
+
+  # 兜底查询，cn查询，仅允许cn_ip
+  - tag: query_final_cn_ip
+    type: sequence
+    args:
+      # - exec: $prefer_ipv6
+      - exec: $ecs_local
+      - exec: $forward_local
+      # 返回非国内 ip 则 drop_resp
+      - exec: $drop_non_cn_ip_sequence
+
+  # -------------------------------------------------------------------
+  # -------------------------------------------------------------------

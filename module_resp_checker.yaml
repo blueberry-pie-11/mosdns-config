@@ -1,0 +1,27 @@
+plugins:
+  # dns查询结果筛选
+  #
+  # 返回国内 ip 则 drop_resp
+  - tag: drop_cn_ip_sequence
+    type: sequence
+    args:
+      - matches: "resp_ip $ip_cn"
+        exec: drop_resp
+
+  # 返回非国内 ip 则 drop_resp
+  - tag: drop_non_cn_ip_sequence
+    type: sequence
+    args:
+      - matches: "!resp_ip $ip_cn"
+        exec: drop_resp
+
+  # 有响应终止查询并返回结果
+  - tag: has_resp_sequence
+    type: sequence
+    args:
+      # - exec: $modify_ttl
+      # - matches: "resp_ip $ip_cloudflare"
+      #   exec: black_hole www.cloudflare.com
+      - matches: has_resp
+        exec: accept
+

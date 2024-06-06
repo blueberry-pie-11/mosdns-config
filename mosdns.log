@@ -1,0 +1,438 @@
+{"level":"info","ts":1716127893.034892,"msg":"load config","file":"./config_set.yaml"}
+{"level":"info","ts":1716127893.0349665,"msg":"loading plugin","tag":"domain_dual_stlack_forward_local","type":"domain_set"}
+{"level":"info","ts":1716127893.0362282,"msg":"loading plugin","tag":"domain_dual_stlack_forward_gobal","type":"domain_set"}
+{"level":"info","ts":1716127893.0418718,"msg":"loading plugin","tag":"domain_prefer_proxy","type":"domain_set"}
+{"level":"info","ts":1716127893.0424132,"msg":"loading plugin","tag":"domain_prefer_direct","type":"domain_set"}
+{"level":"info","ts":1716127893.0440543,"msg":"starting api http server","addr":"0.0.0.0:9091"}
+{"level":"info","ts":1716127893.0473368,"msg":"loading plugin","tag":"domain_prefer_gfw","type":"domain_set"}
+{"level":"info","ts":1716127893.0567403,"msg":"loading plugin","tag":"domain_prefer_cn","type":"domain_set"}
+{"level":"info","ts":1716127893.1933582,"msg":"loading plugin","tag":"ip_cn","type":"ip_set"}
+{"level":"info","ts":1716127893.2063913,"msg":"loading plugin","tag":"ip_cloudflare","type":"ip_set"}
+{"level":"info","ts":1716127893.2075818,"msg":"loading plugin","tag":"ip_fastly","type":"ip_set"}
+{"level":"info","ts":1716127893.2078488,"msg":"loading plugin","tag":"ip_cloudfront","type":"ip_set"}
+{"level":"info","ts":1716127893.20812,"msg":"loading plugin","tag":"domain_private","type":"domain_set"}
+{"level":"info","ts":1716127893.209027,"msg":"loading plugin","tag":"local_ptr","type":"domain_set"}
+{"level":"info","ts":1716127893.2095368,"msg":"loading plugin","tag":"redirect","type":"redirect"}
+{"level":"info","ts":1716127893.209587,"logger":"redirect","msg":"redirect rules loaded","length":0}
+{"level":"info","ts":1716127893.2096076,"msg":"loading plugin","tag":"hosts","type":"hosts"}
+{"level":"info","ts":1716127893.2105627,"msg":"load config","file":"./config_ecs.yaml"}
+{"level":"info","ts":1716127893.2106054,"msg":"loading plugin","tag":"ecs_cn","type":"sequence"}
+{"level":"warn","ts":1716127893.2106256,"logger":"ecs_cn.r0","msg":"ip mask value is deprecated and will be ignored. The default value (24/48) will be used"}
+{"level":"warn","ts":1716127893.2106454,"logger":"ecs_cn.r1","msg":"ip mask value is deprecated and will be ignored. The default value (24/48) will be used"}
+{"level":"info","ts":1716127893.2107325,"msg":"loading plugin","tag":"ecs_us","type":"sequence"}
+{"level":"warn","ts":1716127893.2107832,"logger":"ecs_us.r0","msg":"ip mask value is deprecated and will be ignored. The default value (24/48) will be used"}
+{"level":"warn","ts":1716127893.2107992,"logger":"ecs_us.r1","msg":"ip mask value is deprecated and will be ignored. The default value (24/48) will be used"}
+{"level":"info","ts":1716127893.210819,"msg":"loading plugin","tag":"ecs_hk","type":"sequence"}
+{"level":"warn","ts":1716127893.2108295,"logger":"ecs_hk.r0","msg":"ip mask value is deprecated and will be ignored. The default value (24/48) will be used"}
+{"level":"warn","ts":1716127893.2108917,"logger":"ecs_hk.r1","msg":"ip mask value is deprecated and will be ignored. The default value (24/48) will be used"}
+{"level":"info","ts":1716127893.210912,"msg":"loading plugin","tag":"ecs_local","type":"sequence"}
+{"level":"info","ts":1716127893.210965,"msg":"loading plugin","tag":"ecs_remote","type":"sequence"}
+{"level":"info","ts":1716127893.2109828,"msg":"loading plugin","tag":"ecs_gobal","type":"sequence"}
+{"level":"info","ts":1716127893.2128851,"msg":"load config","file":"./config_dns.yaml"}
+{"level":"info","ts":1716127893.2130876,"msg":"loading plugin","tag":"forward_local","type":"forward"}
+{"level":"info","ts":1716127893.2149925,"msg":"loading plugin","tag":"forward_remote","type":"forward"}
+{"level":"info","ts":1716127893.2158942,"msg":"loading plugin","tag":"forward_gobal","type":"forward"}
+{"level":"info","ts":1716127893.2183144,"msg":"load config","file":"./config_ttl.yaml"}
+{"level":"info","ts":1716127893.218356,"msg":"loading plugin","tag":"modify_ttl","type":"sequence"}
+{"level":"info","ts":1716127893.218413,"msg":"loading plugin","tag":"modify_ddns_ttl","type":"sequence"}
+{"level":"info","ts":1716127893.219199,"msg":"load config","file":"./config_forward.yaml"}
+{"level":"info","ts":1716127893.219243,"msg":"loading plugin","tag":"forward_local_ipv4_and_ipv6_ecs_local_sequence","type":"sequence"}
+{"level":"info","ts":1716127893.2192795,"msg":"loading plugin","tag":"forward_local_ipv6_ecs_local_sequence","type":"sequence"}
+{"level":"info","ts":1716127893.2193446,"msg":"loading plugin","tag":"forward_local_ipv4_and_ipv6_ecs_gobal_sequence","type":"sequence"}
+{"level":"info","ts":1716127893.2193701,"msg":"loading plugin","tag":"forward_remote_ipv4_ecs_remote_sequence","type":"sequence"}
+{"level":"info","ts":1716127893.2194185,"msg":"loading plugin","tag":"forward_remote_ipv4_and_ipv6_ecs_local_sequence","type":"sequence"}
+{"level":"info","ts":1716127893.2194421,"msg":"loading plugin","tag":"forward_gobal_ipv4_and_ipv6_ecs_local_sequence","type":"sequence"}
+{"level":"info","ts":1716127893.2194827,"msg":"loading plugin","tag":"forward_gobal_ipv4_ecs_remote_sequence","type":"sequence"}
+{"level":"info","ts":1716127893.2195168,"msg":"loading plugin","tag":"forward_gobal_ipv4_and_ipv6_ecs_gobal_sequence","type":"sequence"}
+{"level":"info","ts":1716127893.221419,"msg":"load config","file":"./config_query.yaml"}
+{"level":"info","ts":1716127893.2214882,"msg":"loading plugin","tag":"drop_cn_ip_sequence","type":"sequence"}
+{"level":"info","ts":1716127893.221555,"msg":"loading plugin","tag":"drop_no_cn_ip_sequence","type":"sequence"}
+{"level":"info","ts":1716127893.2216008,"msg":"loading plugin","tag":"has_resp_sequence","type":"sequence"}
+{"level":"info","ts":1716127893.2216294,"msg":"loading plugin","tag":"fallback_dual_stlack_forward_gobal_sequence","type":"fallback"}
+{"level":"info","ts":1716127893.2216544,"msg":"loading plugin","tag":"fallback_prefer_proxy_sequence","type":"fallback"}
+{"level":"info","ts":1716127893.2217026,"msg":"loading plugin","tag":"fallback_final_detect_ip_sequence","type":"fallback"}
+{"level":"info","ts":1716127893.2217245,"msg":"loading plugin","tag":"fallback_final_no_cn_ip_sequence","type":"fallback"}
+{"level":"info","ts":1716127893.2217813,"msg":"loading plugin","tag":"query_reject","type":"sequence"}
+{"level":"info","ts":1716127893.2218995,"msg":"loading plugin","tag":"query_dual_stlack_forward_local","type":"sequence"}
+{"level":"info","ts":1716127893.2219477,"msg":"loading plugin","tag":"query_dual_stlack_forward_gobal","type":"sequence"}
+{"level":"info","ts":1716127893.221976,"msg":"loading plugin","tag":"query_prefer_proxy","type":"sequence"}
+{"level":"info","ts":1716127893.2220428,"msg":"loading plugin","tag":"query_prefer_direct","type":"sequence"}
+{"level":"info","ts":1716127893.2220898,"msg":"loading plugin","tag":"query_prefer_gfw","type":"sequence"}
+{"level":"info","ts":1716127893.222126,"msg":"loading plugin","tag":"query_prefer_cn","type":"sequence"}
+{"level":"info","ts":1716127893.222172,"msg":"loading plugin","tag":"query_final_no_cn_ip","type":"sequence"}
+{"level":"info","ts":1716127893.222211,"msg":"loading plugin","tag":"query_final_cn_ip","type":"sequence"}
+{"level":"info","ts":1716127893.2223654,"msg":"loading plugin","tag":"main_sequence","type":"sequence"}
+{"level":"info","ts":1716127893.2224536,"msg":"loading plugin","tag":"udp_server","type":"udp_server"}
+{"level":"info","ts":1716127893.2226,"logger":"udp_server","msg":"udp server started","addr":"127.0.0.1:7753"}
+{"level":"info","ts":1716127893.2227454,"msg":"loading plugin","tag":"tcp_server","type":"tcp_server"}
+{"level":"info","ts":1716127893.2228348,"logger":"tcp_server","msg":"tcp server started","addr":"127.0.0.1:7753","tls":false}
+{"level":"info","ts":1716127893.2228515,"msg":"all plugins are loaded"}
+{"level":"warn","ts":1716127903.2999742,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716127903.3001428,"logger":"forward_remote","msg":"upstream error","uqid":2,"qname":"api.telegram.org.","qclass":1,"qtype":28,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716127904.3663933,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716127904.3665023,"logger":"forward_gobal","msg":"upstream error","uqid":1,"qname":"1ptba.com.","qclass":1,"qtype":28,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716127914.6026137,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716127914.6027105,"logger":"forward_remote","msg":"upstream error","uqid":15,"qname":"apis.google.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716127914.6027443,"logger":"forward_remote_ipv4_ecs_remote_sequence.r0","msg":"reference query routine err","query":{"uqid":15,"client":"127.0.0.1","qname":"apis.google.com.","qtype":1,"qclass":1,"elapsed":2.052053006},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716127916.6543264,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716127916.654458,"logger":"forward_remote","msg":"upstream error","uqid":19,"qname":"play.google.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716127916.6545186,"logger":"forward_remote_ipv4_ecs_remote_sequence.r0","msg":"reference query routine err","query":{"uqid":19,"client":"127.0.0.1","qname":"play.google.com.","qtype":1,"qclass":1,"elapsed":2.313257562},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716127918.7101042,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716127918.7101855,"logger":"forward_remote","msg":"upstream error","uqid":19,"qname":"play.google.com.","qclass":1,"qtype":28,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716127918.7102218,"logger":"fallback_prefer_proxy_sequence","msg":"primary error","query":{"uqid":19,"client":"127.0.0.1","qname":"play.google.com.","qtype":28,"qclass":1,"elapsed":4.368950795},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716127920.1428869,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716127920.1430085,"logger":"forward_gobal","msg":"upstream error","uqid":19,"qname":"play.google.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716127925.9889781,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716127925.989068,"logger":"forward_remote","msg":"upstream error","uqid":24,"qname":"education.github.com.","qclass":1,"qtype":28,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716127931.4341996,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716127931.4343116,"logger":"forward_remote","msg":"upstream error","uqid":27,"qname":"ip.threep.top.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716127931.4343398,"logger":"fallback_final_no_cn_ip_sequence","msg":"primary error","query":{"uqid":27,"client":"127.0.0.1","qname":"ip.threep.top.","qtype":1,"qclass":1,"elapsed":2.050859354},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716127970.9189034,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716127970.919052,"logger":"forward_remote","msg":"upstream error","uqid":38,"qname":"www.google.com.hk.","qclass":1,"qtype":28,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716127992.3605952,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716127992.3607237,"logger":"forward_gobal","msg":"upstream error","uqid":40,"qname":"ptchina.org.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716127996.168683,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716127996.168767,"logger":"forward_gobal","msg":"upstream error","uqid":42,"qname":"tracker.greatposterwall.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716127996.4045792,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716127996.4048116,"logger":"forward_remote","msg":"upstream error","uqid":45,"qname":"accounts.google.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716127996.4048789,"logger":"fallback_prefer_proxy_sequence","msg":"primary error","query":{"uqid":45,"client":"127.0.0.1","qname":"accounts.google.com.","qtype":1,"qclass":1,"elapsed":2.053575025},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716127998.5287008,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716127998.5287852,"logger":"forward_remote","msg":"upstream error","uqid":56,"qname":"lh3.googleusercontent.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716127998.5288167,"logger":"forward_remote_ipv4_ecs_remote_sequence.r0","msg":"reference query routine err","query":{"uqid":56,"client":"127.0.0.1","qname":"lh3.googleusercontent.com.","qtype":1,"qclass":1,"elapsed":2.299822459},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128000.7030754,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128000.703153,"logger":"forward_remote","msg":"upstream error","uqid":64,"qname":"play-lh.googleusercontent.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128000.7031791,"logger":"forward_remote_ipv4_ecs_remote_sequence.r0","msg":"reference query routine err","query":{"uqid":64,"client":"127.0.0.1","qname":"play-lh.googleusercontent.com.","qtype":1,"qclass":1,"elapsed":3.792383085},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128000.7032025,"logger":"forward_remote","msg":"upstream error","uqid":55,"qname":"lh3.googleusercontent.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128000.703223,"logger":"fallback_prefer_proxy_sequence","msg":"primary error","query":{"uqid":55,"client":"127.0.0.1","qname":"lh3.googleusercontent.com.","qtype":1,"qclass":1,"elapsed":4.474329333},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128001.911333,"logger":"forward_remote","msg":"upstream error","uqid":64,"qname":"play-lh.googleusercontent.com.","qclass":1,"qtype":28,"upstream":"google_dns_dot","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128001.9114444,"logger":"fallback_prefer_proxy_sequence","msg":"primary error","query":{"uqid":64,"client":"127.0.0.1","qname":"play-lh.googleusercontent.com.","qtype":28,"qclass":1,"elapsed":5.00064796},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128002.754032,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128007.5416415,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128007.5417316,"logger":"forward_remote","msg":"upstream error","uqid":75,"qname":"clients4.google.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128007.541758,"logger":"fallback_prefer_proxy_sequence","msg":"primary error","query":{"uqid":75,"client":"127.0.0.1","qname":"clients4.google.com.","qtype":1,"qclass":1,"elapsed":2.051095396},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128058.4592962,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128058.45938,"logger":"forward_remote","msg":"upstream error","uqid":83,"qname":"play.googleapis.com.","qclass":1,"qtype":28,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128060.5096495,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128060.509734,"logger":"forward_remote","msg":"upstream error","uqid":84,"qname":"play.googleapis.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128060.509782,"logger":"fallback_prefer_proxy_sequence","msg":"primary error","query":{"uqid":84,"client":"127.0.0.1","qname":"play.googleapis.com.","qtype":1,"qclass":1,"elapsed":4.104398764},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128096.2514427,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128096.2515373,"logger":"forward_remote","msg":"upstream error","uqid":91,"qname":"v20.events.data.microsoft.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128096.2515833,"logger":"fallback_final_no_cn_ip_sequence","msg":"primary error","query":{"uqid":91,"client":"127.0.0.1","qname":"v20.events.data.microsoft.com.","qtype":1,"qclass":1,"elapsed":3.178520686},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128098.8741293,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128098.8742216,"logger":"forward_gobal","msg":"upstream error","uqid":91,"qname":"v20.events.data.microsoft.com.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128098.8755155,"logger":"forward_gobal","msg":"upstream error","uqid":90,"qname":"v20.events.data.microsoft.com.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128099.4059136,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128099.406,"logger":"forward_gobal","msg":"upstream error","uqid":93,"qname":"tracker.hdtime.org.","qclass":1,"qtype":28,"upstream":"google_dns_dot_2","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128103.8748426,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128137.0900598,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128137.0902197,"logger":"forward_remote","msg":"upstream error","uqid":102,"qname":"ecs.office.com.","qclass":1,"qtype":28,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128141.3989272,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128141.3990843,"logger":"forward_gobal","msg":"upstream error","uqid":104,"qname":"mtalk.google.com.","qclass":1,"qtype":28,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128177.5877862,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128177.587879,"logger":"forward_gobal","msg":"upstream error","uqid":115,"qname":"syncthing.net.","qclass":1,"qtype":28,"upstream":"google_dns_dot_2","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128177.5879068,"logger":"forward_gobal","msg":"upstream error","uqid":116,"qname":"syncthing.net.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128177.5879457,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128183.2689188,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128183.2690046,"logger":"forward_remote","msg":"upstream error","uqid":120,"qname":"github.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128183.269032,"logger":"fallback_prefer_proxy_sequence","msg":"primary error","query":{"uqid":120,"client":"127.0.0.1","qname":"github.com.","qtype":1,"qclass":1,"elapsed":2.053257231},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128186.2173107,"logger":"forward_remote","msg":"upstream error","uqid":121,"qname":"github.com.","qclass":1,"qtype":28,"upstream":"google_dns_dot","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128186.2875607,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128186.2876408,"logger":"forward_remote","msg":"upstream error","uqid":123,"qname":"codeium.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128186.2876866,"logger":"forward_remote_ipv4_ecs_remote_sequence.r0","msg":"reference query routine err","query":{"uqid":123,"client":"127.0.0.1","qname":"codeium.com.","qtype":1,"qclass":1,"elapsed":3.869677135},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128187.0174732,"logger":"forward_gobal","msg":"upstream error","uqid":120,"qname":"github.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128187.0176494,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128187.418164,"logger":"fallback_final_no_cn_ip_sequence","msg":"primary error","query":{"uqid":123,"client":"127.0.0.1","qname":"codeium.com.","qtype":28,"qclass":1,"elapsed":5.000234414},"error":"context deadline exceeded"}
+{"level":"warn","ts":1716128187.4183326,"logger":"forward_remote","msg":"upstream error","uqid":123,"qname":"codeium.com.","qclass":1,"qtype":28,"upstream":"google_dns_dot","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128188.218623,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128188.218734,"logger":"forward_gobal","msg":"upstream error","uqid":123,"qname":"codeium.com.","qclass":1,"qtype":28,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128188.219833,"logger":"forward_gobal","msg":"upstream error","uqid":123,"qname":"codeium.com.","qclass":1,"qtype":28,"upstream":"google_dns_dot_2","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128188.3377988,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128192.0188498,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128197.66339,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128197.663501,"logger":"forward_remote","msg":"upstream error","uqid":129,"qname":"ubuntu.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128197.6635303,"logger":"forward_remote_ipv4_ecs_remote_sequence.r0","msg":"reference query routine err","query":{"uqid":129,"client":"127.0.0.1","qname":"ubuntu.com.","qtype":1,"qclass":1,"elapsed":2.051099476},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128218.5944207,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128218.5945122,"logger":"forward_remote","msg":"upstream error","uqid":132,"qname":"api.telegram.org.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128218.594545,"logger":"fallback_prefer_proxy_sequence","msg":"primary error","query":{"uqid":132,"client":"127.0.0.1","qname":"api.telegram.org.","qtype":1,"qclass":1,"elapsed":2.057557569},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128222.3387876,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128222.3388748,"logger":"forward_gobal","msg":"upstream error","uqid":132,"qname":"api.telegram.org.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128225.2779312,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128225.2780545,"logger":"forward_gobal","msg":"upstream error","uqid":134,"qname":"www.hddolby.com.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128291.6263666,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128291.6264586,"logger":"forward_remote","msg":"upstream error","uqid":157,"qname":"msedge.api.cdp.microsoft.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128291.626487,"logger":"fallback_final_no_cn_ip_sequence","msg":"primary error","query":{"uqid":157,"client":"127.0.0.1","qname":"msedge.api.cdp.microsoft.com.","qtype":1,"qclass":1,"elapsed":2.055501753},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128294.0947528,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128294.094902,"logger":"forward_remote","msg":"upstream error","uqid":169,"qname":"cp601.prod.do.dsp.mp.microsoft.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128294.094973,"logger":"forward_remote_ipv4_ecs_remote_sequence.r0","msg":"reference query routine err","query":{"uqid":169,"client":"127.0.0.1","qname":"cp601.prod.do.dsp.mp.microsoft.com.","qtype":1,"qclass":1,"elapsed":2.892775385},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128294.5718153,"logger":"fallback_final_no_cn_ip_sequence","msg":"secondary error","query":{"uqid":157,"client":"127.0.0.1","qname":"msedge.api.cdp.microsoft.com.","qtype":1,"qclass":1,"elapsed":5.000875559},"error":"context deadline exceeded"}
+{"level":"warn","ts":1716128294.5720189,"logger":"udp_server","msg":"entry err","query":{"uqid":157,"client":"127.0.0.1","qname":"msedge.api.cdp.microsoft.com.","qtype":1,"qclass":1,"elapsed":5.001038699},"error":"no valid response from both primary and secondary"}
+{"level":"warn","ts":1716128294.6015239,"logger":"fallback_final_no_cn_ip_sequence","msg":"primary error","query":{"uqid":159,"client":"127.0.0.1","qname":"msedge.api.cdp.microsoft.com.","qtype":28,"qclass":1,"elapsed":5.00044053},"error":"context deadline exceeded"}
+{"level":"warn","ts":1716128294.6017425,"logger":"forward_remote","msg":"upstream error","uqid":159,"qname":"msedge.api.cdp.microsoft.com.","qclass":1,"qtype":28,"upstream":"google_dns_dot","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128294.6018307,"logger":"forward_remote","msg":"upstream error","uqid":159,"qname":"msedge.api.cdp.microsoft.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128294.6018841,"logger":"forward_remote_ipv4_ecs_remote_sequence.r0","msg":"reference query routine err","query":{"uqid":159,"client":"127.0.0.1","qname":"msedge.api.cdp.microsoft.com.","qtype":1,"qclass":1,"elapsed":5.000771395},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128295.0105922,"logger":"fallback_final_no_cn_ip_sequence","msg":"primary error","query":{"uqid":161,"client":"127.0.0.1","qname":"mobile.events.data.microsoft.com.","qtype":28,"qclass":1,"elapsed":5.000243076},"error":"context deadline exceeded"}
+{"level":"warn","ts":1716128295.0109272,"logger":"forward_remote","msg":"upstream error","uqid":161,"qname":"mobile.events.data.microsoft.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128295.011012,"logger":"forward_remote_ipv4_ecs_remote_sequence.r0","msg":"reference query routine err","query":{"uqid":161,"client":"127.0.0.1","qname":"mobile.events.data.microsoft.com.","qtype":1,"qclass":1,"elapsed":5.000634999},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128295.0110917,"logger":"forward_remote","msg":"upstream error","uqid":161,"qname":"mobile.events.data.microsoft.com.","qclass":1,"qtype":28,"upstream":"google_dns_dot","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128295.3378818,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128295.3382053,"logger":"forward_gobal","msg":"upstream error","uqid":163,"qname":"pt.btschool.club.","qclass":1,"qtype":28,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128295.3724897,"logger":"forward_gobal","msg":"upstream error","uqid":157,"qname":"msedge.api.cdp.microsoft.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128295.3726351,"logger":"forward_gobal","msg":"upstream error","uqid":157,"qname":"msedge.api.cdp.microsoft.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128295.3728013,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128295.4037983,"logger":"forward_gobal","msg":"upstream error","uqid":159,"qname":"msedge.api.cdp.microsoft.com.","qclass":1,"qtype":28,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128296.1553042,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128296.1553917,"logger":"forward_remote","msg":"upstream error","uqid":171,"qname":"kv601.prod.do.dsp.mp.microsoft.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128296.1554224,"logger":"forward_remote_ipv4_ecs_remote_sequence.r0","msg":"reference query routine err","query":{"uqid":171,"client":"127.0.0.1","qname":"kv601.prod.do.dsp.mp.microsoft.com.","qtype":1,"qclass":1,"elapsed":3.841259879},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128296.15545,"logger":"forward_remote","msg":"upstream error","uqid":169,"qname":"cp601.prod.do.dsp.mp.microsoft.com.","qclass":1,"qtype":28,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128296.1554823,"logger":"fallback_final_no_cn_ip_sequence","msg":"primary error","query":{"uqid":169,"client":"127.0.0.1","qname":"cp601.prod.do.dsp.mp.microsoft.com.","qtype":28,"qclass":1,"elapsed":4.953270355},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128296.1555011,"logger":"forward_remote","msg":"upstream error","uqid":168,"qname":"cp601.prod.do.dsp.mp.microsoft.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128296.1555226,"logger":"fallback_final_no_cn_ip_sequence","msg":"primary error","query":{"uqid":168,"client":"127.0.0.1","qname":"cp601.prod.do.dsp.mp.microsoft.com.","qtype":1,"qclass":1,"elapsed":4.953533771},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128297.0034049,"logger":"forward_gobal","msg":"upstream error","uqid":169,"qname":"cp601.prod.do.dsp.mp.microsoft.com.","qclass":1,"qtype":28,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128297.3147829,"logger":"forward_remote","msg":"upstream error","uqid":171,"qname":"kv601.prod.do.dsp.mp.microsoft.com.","qclass":1,"qtype":28,"upstream":"google_dns_dot","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128297.3149061,"logger":"fallback_final_no_cn_ip_sequence","msg":"primary error","query":{"uqid":171,"client":"127.0.0.1","qname":"kv601.prod.do.dsp.mp.microsoft.com.","qtype":28,"qclass":1,"elapsed":5.000742982},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128298.2063003,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128300.256624,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128300.256711,"logger":"forward_remote","msg":"upstream error","uqid":178,"qname":"cs.dds.microsoft.com.","qclass":1,"qtype":28,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128300.3390288,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128300.757492,"logger":"fallback_final_no_cn_ip_sequence","msg":"primary error","query":{"uqid":178,"client":"127.0.0.1","qname":"cs.dds.microsoft.com.","qtype":28,"qclass":1,"elapsed":3.845407399},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128301.9128404,"logger":"forward_remote","msg":"upstream error","uqid":178,"qname":"cs.dds.microsoft.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128301.912935,"logger":"forward_remote_ipv4_ecs_remote_sequence.r0","msg":"reference query routine err","query":{"uqid":178,"client":"127.0.0.1","qname":"cs.dds.microsoft.com.","qtype":1,"qclass":1,"elapsed":5.000834751},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128302.309607,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128315.426402,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128315.426522,"logger":"forward_gobal","msg":"upstream error","uqid":185,"qname":"tracker.carpt.net.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128315.4268813,"logger":"forward_gobal","msg":"upstream error","uqid":186,"qname":"tracker.carpt.net.","qclass":1,"qtype":28,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128320.4278488,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128324.6335764,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128324.633679,"logger":"forward_remote","msg":"upstream error","uqid":187,"qname":"api.onedrive.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128324.633716,"logger":"forward_remote_ipv4_ecs_remote_sequence.r0","msg":"reference query routine err","query":{"uqid":187,"client":"127.0.0.1","qname":"api.onedrive.com.","qtype":1,"qclass":1,"elapsed":2.050668289},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128338.5548952,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128338.5550137,"logger":"forward_remote","msg":"upstream error","uqid":193,"qname":"config.edge.skype.com.","qclass":1,"qtype":28,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128339.055993,"logger":"fallback_final_no_cn_ip_sequence","msg":"primary error","query":{"uqid":193,"client":"127.0.0.1","qname":"config.edge.skype.com.","qtype":28,"qclass":1,"elapsed":2.557185633},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128340.604582,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128340.6046498,"logger":"forward_remote","msg":"upstream error","uqid":195,"qname":"config.edge.skype.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128340.6047087,"logger":"forward_remote_ipv4_ecs_remote_sequence.r0","msg":"reference query routine err","query":{"uqid":195,"client":"127.0.0.1","qname":"config.edge.skype.com.","qtype":1,"qclass":1,"elapsed":4.069264576},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128341.4990535,"logger":"fallback_final_no_cn_ip_sequence","msg":"primary error","query":{"uqid":194,"client":"127.0.0.1","qname":"config.edge.skype.com.","qtype":1,"qclass":1,"elapsed":5.000042409},"error":"context deadline exceeded"}
+{"level":"warn","ts":1716128341.4989476,"logger":"forward_remote_ipv4_ecs_remote_sequence.r0","msg":"reference query routine err","query":{"uqid":193,"client":"127.0.0.1","qname":"config.edge.skype.com.","qtype":1,"qclass":1,"elapsed":5.000267666},"error":"context deadline exceeded"}
+{"level":"warn","ts":1716128341.5001657,"logger":"forward_remote","msg":"upstream error","uqid":193,"qname":"config.edge.skype.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128341.5002103,"logger":"forward_remote","msg":"upstream error","uqid":194,"qname":"config.edge.skype.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128341.5363786,"logger":"forward_remote","msg":"upstream error","uqid":196,"qname":"config.edge.skype.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128341.53648,"logger":"fallback_final_no_cn_ip_sequence","msg":"primary error","query":{"uqid":196,"client":"127.0.0.1","qname":"config.edge.skype.com.","qtype":1,"qclass":1,"elapsed":5.000836676},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128342.3011796,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128342.301271,"logger":"forward_gobal","msg":"upstream error","uqid":193,"qname":"config.edge.skype.com.","qclass":1,"qtype":28,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128342.3013198,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128342.3015506,"logger":"forward_gobal","msg":"upstream error","uqid":193,"qname":"config.edge.skype.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128342.3015683,"logger":"forward_gobal","msg":"upstream error","uqid":194,"qname":"config.edge.skype.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128342.3378,"logger":"forward_gobal","msg":"upstream error","uqid":196,"qname":"config.edge.skype.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128342.6620843,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128347.3030758,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128381.06352,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128381.0637202,"logger":"forward_gobal","msg":"upstream error","uqid":203,"qname":"api.cloudflare.com.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128398.3901837,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128398.39027,"logger":"forward_remote","msg":"upstream error","uqid":207,"qname":"topjohnwu.github.io.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128398.390298,"logger":"forward_remote_ipv4_ecs_remote_sequence.r0","msg":"reference query routine err","query":{"uqid":207,"client":"127.0.0.1","qname":"topjohnwu.github.io.","qtype":1,"qclass":1,"elapsed":2.069591896},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128401.5652764,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128401.5653584,"logger":"forward_remote","msg":"upstream error","uqid":213,"qname":"lsposed.github.io.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128401.5654023,"logger":"fallback_prefer_proxy_sequence","msg":"primary error","query":{"uqid":213,"client":"127.0.0.1","qname":"lsposed.github.io.","qtype":1,"qclass":1,"elapsed":2.050259815},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128402.7704866,"logger":"fallback_dual_stlack_forward_gobal_sequence","msg":"primary error","query":{"uqid":209,"client":"127.0.0.1","qname":"ghproxy.com.","qtype":1,"qclass":1,"elapsed":5.000122747},"error":"context deadline exceeded"}
+{"level":"warn","ts":1716128402.7706912,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128402.770925,"logger":"forward_gobal","msg":"upstream error","uqid":209,"qname":"ghproxy.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128402.7709444,"logger":"forward_gobal","msg":"upstream error","uqid":209,"qname":"ghproxy.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128403.6193106,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128403.6194258,"logger":"forward_remote","msg":"upstream error","uqid":217,"qname":"lsposed.org.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128403.6194873,"logger":"fallback_final_no_cn_ip_sequence","msg":"primary error","query":{"uqid":217,"client":"127.0.0.1","qname":"lsposed.org.","qtype":1,"qclass":1,"elapsed":2.840099718},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128405.5278096,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128405.5279276,"logger":"forward_gobal","msg":"upstream error","uqid":215,"qname":"hdarea.club.","qclass":1,"qtype":28,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128407.0783784,"logger":"forward_gobal","msg":"upstream error","uqid":220,"qname":"www.pttime.org.","qclass":1,"qtype":28,"upstream":"google_dns_dot_2","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128407.771247,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128407.9487846,"logger":"forward_gobal","msg":"upstream error","uqid":223,"qname":"greatposterwall.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128407.9488773,"logger":"fallback_dual_stlack_forward_gobal_sequence","msg":"primary error","query":{"uqid":223,"client":"127.0.0.1","qname":"greatposterwall.com.","qtype":1,"qclass":1,"elapsed":5.000716554},"error":"context deadline exceeded"}
+{"level":"warn","ts":1716128407.9489052,"logger":"forward_gobal","msg":"upstream error","uqid":222,"qname":"greatposterwall.com.","qclass":1,"qtype":28,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128407.9489217,"logger":"forward_gobal","msg":"upstream error","uqid":223,"qname":"greatposterwall.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128410.5287783,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128410.8593616,"logger":"forward_gobal","msg":"upstream error","uqid":225,"qname":"hdmayi.com.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128412.4239798,"logger":"forward_gobal","msg":"upstream error","uqid":231,"qname":"hdatmos.club.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128412.424087,"logger":"forward_gobal","msg":"upstream error","uqid":230,"qname":"hdatmos.club.","qclass":1,"qtype":28,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128412.7718494,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128413.334771,"logger":"forward_gobal","msg":"upstream error","uqid":233,"qname":"wintersakura.net.","qclass":1,"qtype":28,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128413.3348746,"logger":"fallback_dual_stlack_forward_gobal_sequence","msg":"primary error","query":{"uqid":233,"client":"127.0.0.1","qname":"wintersakura.net.","qtype":28,"qclass":1,"elapsed":5.000976411},"error":"context deadline exceeded"}
+{"level":"warn","ts":1716128413.3349292,"logger":"forward_gobal","msg":"upstream error","uqid":233,"qname":"wintersakura.net.","qclass":1,"qtype":28,"upstream":"google_dns_dot_2","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128414.2082186,"logger":"forward_gobal","msg":"upstream error","uqid":234,"qname":"leaves.red.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128415.5292249,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128417.7723856,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128418.7492,"logger":"forward_gobal","msg":"upstream error","uqid":241,"qname":"hdfans.org.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128418.7504177,"logger":"forward_gobal","msg":"upstream error","uqid":242,"qname":"hdfans.org.","qclass":1,"qtype":28,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128420.5299325,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128421.9618475,"logger":"forward_gobal","msg":"upstream error","uqid":244,"qname":"www.haidan.video.","qclass":1,"qtype":28,"upstream":"google_dns_dot_2","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128422.275856,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128422.2759647,"logger":"forward_remote","msg":"upstream error","uqid":250,"qname":"www.comicat.org.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128422.2760262,"logger":"fallback_final_no_cn_ip_sequence","msg":"primary error","query":{"uqid":250,"client":"127.0.0.1","qname":"www.comicat.org.","qtype":1,"qclass":1,"elapsed":2.068146314},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128422.772943,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128424.0117142,"logger":"forward_gobal","msg":"upstream error","uqid":247,"qname":"pt.2xfree.org.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128426.0089998,"logger":"forward_gobal","msg":"upstream error","uqid":250,"qname":"www.comicat.org.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128427.7740953,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128430.578152,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128430.5782547,"logger":"forward_gobal","msg":"upstream error","uqid":257,"qname":"discovery.syncthing.net.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128436.0078332,"logger":"fallback_dual_stlack_forward_gobal_sequence","msg":"primary error","query":{"uqid":260,"client":"127.0.0.1","qname":"crabpt.vip.","qtype":1,"qclass":1,"elapsed":5.000142069},"error":"context deadline exceeded"}
+{"level":"warn","ts":1716128436.0090566,"logger":"forward_gobal","msg":"upstream error","uqid":260,"qname":"crabpt.vip.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128436.009091,"logger":"forward_gobal","msg":"upstream error","uqid":260,"qname":"crabpt.vip.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128436.00918,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128437.0290549,"logger":"fallback_dual_stlack_forward_gobal_sequence","msg":"primary error","query":{"uqid":262,"client":"127.0.0.1","qname":"ihdbits.me.","qtype":1,"qclass":1,"elapsed":5.000155605},"error":"context deadline exceeded"}
+{"level":"warn","ts":1716128437.0292947,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128437.0293386,"logger":"forward_gobal","msg":"upstream error","uqid":262,"qname":"ihdbits.me.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128437.0293555,"logger":"forward_gobal","msg":"upstream error","uqid":262,"qname":"ihdbits.me.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128437.0293696,"logger":"forward_gobal","msg":"upstream error","uqid":263,"qname":"ihdbits.me.","qclass":1,"qtype":28,"upstream":"google_dns_dot_2","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128438.1192684,"logger":"forward_gobal","msg":"upstream error","uqid":265,"qname":"ww25.ihdbits.me.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128438.1193573,"logger":"forward_gobal","msg":"upstream error","uqid":264,"qname":"ww25.ihdbits.me.","qclass":1,"qtype":28,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128438.1906297,"logger":"forward_gobal","msg":"upstream error","uqid":266,"qname":"springsunday.net.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128438.1907365,"logger":"fallback_dual_stlack_forward_gobal_sequence","msg":"primary error","query":{"uqid":266,"client":"127.0.0.1","qname":"springsunday.net.","qtype":1,"qclass":1,"elapsed":5.000858932},"error":"context deadline exceeded"}
+{"level":"warn","ts":1716128438.1907635,"logger":"forward_gobal","msg":"upstream error","uqid":266,"qname":"springsunday.net.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128441.0108078,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128470.2908964,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128470.2909908,"logger":"forward_remote","msg":"upstream error","uqid":284,"qname":"android.clients.google.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128470.291035,"logger":"fallback_prefer_proxy_sequence","msg":"primary error","query":{"uqid":284,"client":"127.0.0.1","qname":"android.clients.google.com.","qtype":1,"qclass":1,"elapsed":2.115302177},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128472.344308,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128472.344387,"logger":"forward_remote","msg":"upstream error","uqid":291,"qname":"prod-lt-playstoregatewayadapter-pa.googleapis.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128472.344416,"logger":"fallback_prefer_proxy_sequence","msg":"primary error","query":{"uqid":291,"client":"127.0.0.1","qname":"prod-lt-playstoregatewayadapter-pa.googleapis.com.","qtype":1,"qclass":1,"elapsed":3.161953032},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128473.9784093,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128473.9785075,"logger":"forward_gobal","msg":"upstream error","uqid":284,"qname":"android.clients.google.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128474.180996,"logger":"forward_remote","msg":"upstream error","uqid":290,"qname":"prod-lt-playstoregatewayadapter-pa.googleapis.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128474.181099,"logger":"forward_remote_ipv4_ecs_remote_sequence.r0","msg":"reference query routine err","query":{"uqid":290,"client":"127.0.0.1","qname":"prod-lt-playstoregatewayadapter-pa.googleapis.com.","qtype":1,"qclass":1,"elapsed":5.000964065},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128474.9838808,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128474.983966,"logger":"forward_gobal","msg":"upstream error","uqid":291,"qname":"prod-lt-playstoregatewayadapter-pa.googleapis.com.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128475.5696838,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128480.4803605,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128480.480681,"logger":"forward_remote","msg":"upstream error","uqid":302,"qname":"www.googleapis.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128480.4807665,"logger":"fallback_prefer_proxy_sequence","msg":"primary error","query":{"uqid":302,"client":"127.0.0.1","qname":"www.googleapis.com.","qtype":1,"qclass":1,"elapsed":2.135577848},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128482.5307443,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128482.5308247,"logger":"forward_remote","msg":"upstream error","uqid":307,"qname":"passwordsleakcheck-pa.googleapis.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128482.5308518,"logger":"forward_remote_ipv4_ecs_remote_sequence.r0","msg":"reference query routine err","query":{"uqid":307,"client":"127.0.0.1","qname":"passwordsleakcheck-pa.googleapis.com.","qtype":1,"qclass":1,"elapsed":3.958163811},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128483.3457124,"logger":"forward_remote","msg":"upstream error","uqid":303,"qname":"www.googleapis.com.","qclass":1,"qtype":28,"upstream":"google_dns_dot","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128483.5732317,"logger":"forward_remote","msg":"upstream error","uqid":306,"qname":"passwordsleakcheck-pa.googleapis.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128483.57332,"logger":"fallback_prefer_proxy_sequence","msg":"primary error","query":{"uqid":306,"client":"127.0.0.1","qname":"passwordsleakcheck-pa.googleapis.com.","qtype":1,"qclass":1,"elapsed":5.000737111},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128484.5798955,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128497.6524708,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128497.6525733,"logger":"forward_gobal","msg":"upstream error","uqid":316,"qname":"tracker.m-team.cc.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128509.2481737,"logger":"forward_remote","msg":"failed to dial dns conn","error":"EOF"}
+{"level":"warn","ts":1716128509.248257,"logger":"forward_remote","msg":"upstream error","uqid":318,"qname":"ubuntu.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"EOF"}
+{"level":"warn","ts":1716128509.2482831,"logger":"fallback_final_no_cn_ip_sequence","msg":"primary error","query":{"uqid":318,"client":"127.0.0.1","qname":"ubuntu.com.","qtype":1,"qclass":1,"elapsed":2.050176973},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128512.9999614,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128513.0000777,"logger":"forward_gobal","msg":"upstream error","uqid":318,"qname":"ubuntu.com.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128530.3477924,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128530.3478928,"logger":"forward_gobal","msg":"upstream error","uqid":322,"qname":"tracker.wintersakura.net.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128590.5443065,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128590.5444064,"logger":"forward_gobal","msg":"upstream error","uqid":330,"qname":"tracker.hdarea.club.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128602.0950658,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128602.0951612,"logger":"forward_gobal","msg":"upstream error","uqid":335,"qname":"discovery-v6.syncthing.net.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128633.828702,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128633.8289356,"logger":"forward_gobal","msg":"upstream error","uqid":340,"qname":"1ptba.com.","qclass":1,"qtype":28,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128642.9327836,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128642.932929,"logger":"forward_gobal","msg":"upstream error","uqid":343,"qname":"hk01.84d4d2ae-211c-475f-9076-35fdd96d779b.940a60a7-6cb5-4fa7-bd73-23230d77aa0e.yiyuanjichang.org.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128650.4036415,"logger":"fallback_dual_stlack_forward_gobal_sequence","msg":"primary error","query":{"uqid":349,"client":"127.0.0.1","qname":"catalog.gamepass.com.","qtype":1,"qclass":1,"elapsed":5.000200922},"error":"context deadline exceeded"}
+{"level":"warn","ts":1716128650.4040954,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128650.404206,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128650.4042513,"logger":"forward_gobal","msg":"upstream error","uqid":349,"qname":"catalog.gamepass.com.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128650.4042914,"logger":"forward_gobal","msg":"upstream error","uqid":349,"qname":"catalog.gamepass.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128672.1647925,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128672.164905,"logger":"forward_gobal","msg":"upstream error","uqid":352,"qname":"hk02.84d4d2ae-211c-475f-9076-35fdd96d779b.940a60a7-6cb5-4fa7-bd73-23230d77aa0e.yiyuanjichang.org.","qclass":1,"qtype":28,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128672.1695702,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128672.1696773,"logger":"forward_gobal","msg":"upstream error","uqid":353,"qname":"hk02.84d4d2ae-211c-475f-9076-35fdd96d779b.940a60a7-6cb5-4fa7-bd73-23230d77aa0e.yiyuanjichang.org.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128672.1739216,"logger":"forward_gobal","msg":"upstream error","uqid":354,"qname":"hk04.84d4d2ae-211c-475f-9076-35fdd96d779b.940a60a7-6cb5-4fa7-bd73-23230d77aa0e.yiyuanjichang.org.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128677.1659822,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128708.2357419,"logger":"forward_gobal","msg":"upstream error","uqid":367,"qname":"lh3.googleusercontent.com.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128708.2359064,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128709.5108068,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128709.5108893,"logger":"forward_gobal","msg":"upstream error","uqid":373,"qname":"play.google.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128711.8897078,"logger":"forward_gobal","msg":"upstream error","uqid":379,"qname":"registry.npmmirror.com.","qclass":1,"qtype":28,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128713.2364411,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128723.905167,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128723.9052715,"logger":"forward_gobal","msg":"upstream error","uqid":407,"qname":"accounts.youtube.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128725.721492,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128725.7215798,"logger":"forward_gobal","msg":"upstream error","uqid":411,"qname":"translate.googleapis.com.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128749.3101096,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128749.310222,"logger":"forward_gobal","msg":"upstream error","uqid":425,"qname":"rr3---sn-i3b7knsd.googlevideo.com.","qclass":1,"qtype":28,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128762.4503343,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128762.450455,"logger":"forward_gobal","msg":"upstream error","uqid":430,"qname":"mtalk.google.com.","qclass":1,"qtype":28,"upstream":"google_dns_dot_2","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128768.3390536,"logger":"fallback_dual_stlack_forward_gobal_sequence","msg":"primary error","query":{"uqid":431,"client":"127.0.0.1","qname":"tracker.m-team.io.","qtype":28,"qclass":1,"elapsed":5.000971031},"error":"context deadline exceeded"}
+{"level":"warn","ts":1716128768.3391626,"logger":"forward_gobal","msg":"upstream error","uqid":431,"qname":"tracker.m-team.io.","qclass":1,"qtype":28,"upstream":"google_dns_dot_2","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128768.3392408,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128768.339475,"logger":"forward_gobal","msg":"upstream error","uqid":431,"qname":"tracker.m-team.io.","qclass":1,"qtype":28,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128768.3395085,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128769.5566952,"logger":"forward_gobal","msg":"upstream error","uqid":434,"qname":"rr3---sn-npoldn7e.googlevideo.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128769.5567846,"logger":"forward_gobal","msg":"upstream error","uqid":433,"qname":"rr3---sn-npoldn7e.googlevideo.com.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128773.340271,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128773.3403833,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128780.771856,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128780.7719467,"logger":"forward_gobal","msg":"upstream error","uqid":452,"qname":"syncthing.net.","qclass":1,"qtype":28,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128780.771968,"logger":"forward_gobal","msg":"upstream error","uqid":451,"qname":"syncthing.net.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128806.7838702,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128806.784001,"logger":"forward_gobal","msg":"upstream error","uqid":465,"qname":"tracker.hdtime.org.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128872.0643787,"logger":"forward_remote","msg":"upstream error","uqid":479,"qname":"rr3---sn-i3belne6.googlevideo.com.","qclass":1,"qtype":28,"upstream":"google_dns_dot","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128872.8644977,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128872.8645859,"logger":"forward_gobal","msg":"upstream error","uqid":479,"qname":"rr3---sn-i3belne6.googlevideo.com.","qclass":1,"qtype":28,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128876.6471274,"logger":"fallback_prefer_proxy_sequence","msg":"secondary error","query":{"uqid":482,"client":"127.0.0.1","qname":"rr1---sn-i3belnlz.googlevideo.com.","qtype":1,"qclass":1,"elapsed":5.0019844},"error":"context deadline exceeded"}
+{"level":"warn","ts":1716128877.4460683,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128877.4461575,"logger":"forward_gobal","msg":"upstream error","uqid":482,"qname":"rr1---sn-i3belnlz.googlevideo.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128877.4461868,"logger":"forward_gobal","msg":"upstream error","uqid":482,"qname":"rr1---sn-i3belnlz.googlevideo.com.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128877.6227071,"logger":"fallback_prefer_proxy_sequence","msg":"secondary error","query":{"uqid":488,"client":"127.0.0.1","qname":"rr1---sn-i3belnlz.googlevideo.com.","qtype":1,"qclass":1,"elapsed":5.000875656},"error":"context deadline exceeded"}
+{"level":"warn","ts":1716128877.8652296,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128878.423738,"logger":"forward_gobal","msg":"upstream error","uqid":488,"qname":"rr1---sn-i3belnlz.googlevideo.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128878.4238324,"logger":"forward_gobal","msg":"upstream error","uqid":488,"qname":"rr1---sn-i3belnlz.googlevideo.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128882.4467788,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128901.900123,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128901.9002163,"logger":"forward_gobal","msg":"upstream error","uqid":496,"qname":"www.google.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128908.608345,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128908.6084435,"logger":"forward_gobal","msg":"upstream error","uqid":498,"qname":"tracker.m-team.io.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128917.8223045,"logger":"forward_remote","msg":"failed to dial dns conn","error":"read tcp 192.168.50.53:51204->8.8.8.8:853: read: connection reset by peer"}
+{"level":"warn","ts":1716128917.8223867,"logger":"forward_remote","msg":"upstream error","uqid":503,"qname":"github.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot","error":"read tcp 192.168.50.53:51204->8.8.8.8:853: read: connection reset by peer"}
+{"level":"warn","ts":1716128917.8224173,"logger":"fallback_prefer_proxy_sequence","msg":"primary error","query":{"uqid":503,"client":"127.0.0.1","qname":"github.com.","qtype":1,"qclass":1,"elapsed":3.06634416},"error":"all upstream servers failed"}
+{"level":"warn","ts":1716128919.756526,"logger":"fallback_prefer_proxy_sequence","msg":"secondary error","query":{"uqid":503,"client":"127.0.0.1","qname":"github.com.","qtype":1,"qclass":1,"elapsed":5.000478241},"error":"context deadline exceeded"}
+{"level":"warn","ts":1716128919.7566326,"logger":"udp_server","msg":"entry err","query":{"uqid":503,"client":"127.0.0.1","qname":"github.com.","qtype":1,"qclass":1,"elapsed":5.000556595},"error":"no valid response from both primary and secondary"}
+{"level":"warn","ts":1716128920.5571377,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128920.5574465,"logger":"forward_gobal","msg":"upstream error","uqid":503,"qname":"github.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128920.5574722,"logger":"forward_gobal","msg":"upstream error","uqid":503,"qname":"github.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128923.3403187,"logger":"forward_gobal","msg":"upstream error","uqid":504,"qname":"rr2---sn-oguesn6d.googlevideo.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128923.3404229,"logger":"forward_gobal","msg":"upstream error","uqid":506,"qname":"rr2---sn-oguesn6d.googlevideo.com.","qclass":1,"qtype":28,"upstream":"google_dns_dot_2","error":"context deadline exceeded"}
+{"level":"warn","ts":1716128925.557818,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: i/o timeout"}
+{"level":"warn","ts":1716128928.4179335,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128928.4180162,"logger":"forward_gobal","msg":"upstream error","uqid":508,"qname":"api.onedrive.com.","qclass":1,"qtype":1,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128928.4182887,"logger":"forward_gobal","msg":"upstream error","uqid":509,"qname":"api.onedrive.com.","qclass":1,"qtype":28,"upstream":"cisco_opendns_dot_3","error":"dial tcp [2620:119:53::5]:853: i/o timeout"}
+{"level":"warn","ts":1716128941.462005,"msg":"signal received","signal":"terminated"}
+{"level":"info","ts":1716128941.4620814,"msg":"starting shutdown sequences"}
+{"level":"info","ts":1716128941.4620943,"msg":"closing plugin","tag":"drop_no_cn_ip_sequence"}
+{"level":"info","ts":1716128941.4621055,"msg":"closing plugin","tag":"query_prefer_cn"}
+{"level":"info","ts":1716128941.462117,"msg":"closing plugin","tag":"forward_gobal"}
+{"level":"info","ts":1716128941.4623325,"msg":"closing plugin","tag":"modify_ddns_ttl"}
+{"level":"info","ts":1716128941.4623458,"msg":"closing plugin","tag":"ecs_gobal"}
+{"level":"info","ts":1716128941.462352,"msg":"closing plugin","tag":"forward_local_ipv4_and_ipv6_ecs_gobal_sequence"}
+{"level":"info","ts":1716128941.4623582,"msg":"closing plugin","tag":"forward_remote_ipv4_and_ipv6_ecs_local_sequence"}
+{"level":"info","ts":1716128941.4623635,"msg":"closing plugin","tag":"has_resp_sequence"}
+{"level":"info","ts":1716128941.4623704,"msg":"closing plugin","tag":"query_dual_stlack_forward_local"}
+{"level":"info","ts":1716128941.4623783,"msg":"closing plugin","tag":"main_sequence"}
+{"level":"info","ts":1716128941.4623878,"msg":"closing plugin","tag":"ecs_remote"}
+{"level":"info","ts":1716128941.462394,"msg":"closing plugin","tag":"forward_gobal_ipv4_ecs_remote_sequence"}
+{"level":"info","ts":1716128941.4624028,"msg":"closing plugin","tag":"drop_cn_ip_sequence"}
+{"level":"info","ts":1716128941.4624093,"msg":"closing plugin","tag":"query_final_no_cn_ip"}
+{"level":"info","ts":1716128941.4624155,"msg":"closing plugin","tag":"udp_server"}
+{"level":"warn","ts":1716128941.462447,"logger":"udp_server","msg":"read err","error":"read udp 127.0.0.1:7753: use of closed network connection"}
+{"level":"info","ts":1716128941.4650073,"msg":"closing plugin","tag":"forward_local"}
+{"level":"warn","ts":1716128941.4653757,"logger":"forward_gobal","msg":"failed to dial dns conn","error":"dial tcp [2001:4860:4860::888]:853: operation was canceled"}
+{"level":"warn","ts":1716128941.4654222,"logger":"forward_gobal","msg":"upstream error","uqid":548,"qname":"mtalk.google.com.","qclass":1,"qtype":1,"upstream":"google_dns_dot_2","error":"lazy dial canceled"}
+{"level":"info","ts":1716128941.4656398,"msg":"closing plugin","tag":"forward_remote_ipv4_ecs_remote_sequence"}
+{"level":"info","ts":1716128941.4656546,"msg":"closing plugin","tag":"query_reject"}
+{"level":"info","ts":1716128941.4656985,"msg":"closing plugin","tag":"modify_ttl"}
+{"level":"info","ts":1716128941.4657078,"msg":"closing plugin","tag":"forward_gobal_ipv4_and_ipv6_ecs_gobal_sequence"}
+{"level":"info","ts":1716128941.465714,"msg":"closing plugin","tag":"query_final_cn_ip"}
+{"level":"info","ts":1716128941.4657202,"msg":"closing plugin","tag":"forward_local_ipv6_ecs_local_sequence"}
+{"level":"info","ts":1716128941.4657273,"msg":"closing plugin","tag":"query_prefer_proxy"}
+{"level":"info","ts":1716128941.465734,"msg":"closing plugin","tag":"ecs_hk"}
+{"level":"info","ts":1716128941.4657626,"msg":"closing plugin","tag":"ecs_cn"}
+{"level":"info","ts":1716128941.465773,"msg":"closing plugin","tag":"forward_local_ipv4_and_ipv6_ecs_local_sequence"}
+{"level":"info","ts":1716128941.4657872,"msg":"closing plugin","tag":"query_dual_stlack_forward_gobal"}
+{"level":"info","ts":1716128941.4657938,"msg":"closing plugin","tag":"ecs_us"}
+{"level":"info","ts":1716128941.4657989,"msg":"closing plugin","tag":"ecs_local"}
+{"level":"info","ts":1716128941.465804,"msg":"closing plugin","tag":"forward_remote"}
+{"level":"info","ts":1716128941.4659536,"msg":"closing plugin","tag":"query_prefer_direct"}
+{"level":"info","ts":1716128941.4659653,"msg":"closing plugin","tag":"forward_gobal_ipv4_and_ipv6_ecs_local_sequence"}
+{"level":"info","ts":1716128941.4660072,"msg":"closing plugin","tag":"query_prefer_gfw"}
+{"level":"info","ts":1716128941.466018,"msg":"closing plugin","tag":"tcp_server"}
+{"level":"info","ts":1716128941.4660528,"msg":"all plugins were closed"}

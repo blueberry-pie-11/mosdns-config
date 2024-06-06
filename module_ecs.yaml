@@ -1,0 +1,94 @@
+plugins:
+  ## ---------------------------------------------------------------
+  # 底层 ecs
+  # ecs_cn
+  - tag: ecs_cn_ipv4
+    type: "ecs_handler"
+    args:
+      forward: false # 是否转发来自下游的 ecs
+      preset: 223.68.90.1 # 发送预设 ecs
+      send: false # 是否发送 ecs
+      mask4: 24 # ipv4 掩码。默认 24
+      mask6: 48 # ipv6 掩码。默认 48
+
+  - tag: ecs_cn_ipv6
+    type: "ecs_handler"
+    args:
+      forward: false # 是否转发来自下游的 ecs
+      preset: 2409:8a20::1 # 发送预设 ecs
+      send: false # 是否发送 ecs
+      mask4: 24 # ipv4 掩码。默认 24
+      mask6: 48 # ipv6 掩码。默认 48
+
+  # ecs_us
+  - tag: ecs_us_ipv4
+    type: "ecs_handler"
+    args:
+      forward: false # 是否转发来自下游的 ecs
+      preset: 209.141.33.1 # 发送预设 ecs
+      send: false # 是否发送 ecs
+      mask4: 24 # ipv4 掩码。默认 24
+      mask6: 48 # ipv6 掩码。默认 48
+
+  - tag: ecs_us_ipv6
+    type: "ecs_handler"
+    args:
+      forward: false # 是否转发来自下游的 ecs
+      preset: 2605:6400:4a22::1 # 发送预设 ecs
+      send: false # 是否发送 ecs
+      mask4: 24 # ipv4 掩码。默认 24
+      mask6: 48 # ipv6 掩码。默认 48
+
+  # ecs_hk
+  - tag: ecs_hk_ipv4
+    type: "ecs_handler"
+    args:
+      forward: false # 是否转发来自下游的 ecs
+      preset: 1.36.100.1 # 发送预设 ecs
+      send: false # 是否发送 ecs
+      mask4: 24 # ipv4 掩码。默认 24
+      mask6: 48 # ipv6 掩码。默认 48
+
+  - tag: ecs_hk_ipv6
+    type: "ecs_handler"
+    args:
+      forward: false # 是否转发来自下游的 ecs
+      preset: 2404:c800::1 # 发送预设 ecs
+      send: false # 是否发送 ecs
+      mask4: 24 # ipv4 掩码。默认 24
+      mask6: 48 # ipv6 掩码。默认 48
+  ## ---------------------------------------------------------------
+
+  ## ---------------------------------------------------------------
+  # 应用层 ecs
+  # ecs_local，cn_ip
+  - tag: ecs_local
+    type: sequence
+    args:
+      # # 匹配A记录
+      # - matches: qtype 1
+      #   exec: $ecs_cn_ipv4
+      # 匹配AAAA记录
+      - matches: qtype 28
+        exec: $ecs_cn_ipv6
+      - matches: "!qtype 28"
+        exec: $ecs_cn_ipv4
+
+  # ecs_remote，us_ip
+  - tag: ecs_remote
+    type: sequence
+    args:
+      # - exec: $ecs_us_ipv4
+
+  # ecs_gobal，hk_ip
+  - tag: ecs_gobal
+    type: sequence
+    args:
+      # # 匹配A记录
+      # - matches: qtype 1
+      #   exec: $ecs_hk_ipv4
+      # 匹配AAAA记录
+      - matches: qtype 28
+        exec: $ecs_hk_ipv6
+      - matches: "!qtype 28"
+        exec: $ecs_hk_ipv4

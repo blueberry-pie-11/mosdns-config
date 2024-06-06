@@ -11,12 +11,13 @@ api:
 # []string, 从其他配置文件载入 plugins 插件设置。
 # include 的插件会比本配置文件中的插件先初始化。
 include:
-  - "./config_set.yaml"
-  - "./config_ecs.yaml"
-  - "./config_dns.yaml"
-  - "./config_ttl.yaml"
-  - "./config_forward.yaml"
-  - "./config_query.yaml"
+  - "./module_set.yaml"
+  - "./module_ecs.yaml"
+  - "./module_dns.yaml"
+  - "./module_ttl.yaml"
+  - "./module_forward.yaml"
+  - "./module_resp_checker.yaml"  
+  - "./module_query.yaml"
 
 plugins:
   # 缓存
@@ -69,11 +70,11 @@ plugins:
       - exec: jump has_resp_sequence   
       # --------------------------------
       # dual_stack域名解析
-      # 查询全栈域名,forward_local
-      - exec: $query_dual_stlack_forward_local
+      # 查询全栈域名,local
+      - exec: $query_dual_stlack_local
       - exec: jump has_resp_sequence
-      # 查询全栈域名,forward_gobal
-      - exec: $query_dual_stlack_forward_gobal
+      # 查询全栈域名,gobal
+      - exec: $query_dual_stlack_gobal
       - exec: jump has_resp_sequence
       # --------------------------------
       # prefer_ipv4/6域名解析      
@@ -86,7 +87,7 @@ plugins:
       # --------------------------------
       # 非域名列表内的域名查询
       # 兜底查询，fallback查询，no_cn_ip
-      - exec: $query_final_no_cn_ip
+      - exec: $query_final_non_cn_ip
       - exec: jump has_resp_sequence
       # 兜底查询，本地查询，cn_ip
       - exec: $query_final_cn_ip
