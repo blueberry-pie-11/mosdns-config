@@ -7,21 +7,12 @@ plugins:
     args:
       files:
         - "./custom_set/local/domain_dual_stlack_local_custom.txt"
-        - "./custom_set/local/domain_dual_stlack_local_game.txt"
-        - "./custom_set/local/domain_dual_stlack_local_network.txt"
 
   # dual_stlack域名，gobal，gobal+cn
   - tag: domain_dual_stlack_gobal
     type: domain_set
     args:
       files:
-        - "./custom_set/gobal/domain_dual_stlack_gobal_custom.txt"
-        - "./custom_set/gobal/domain_dual_stlack_gobal_resourse.txt"
-        - "./custom_set/gobal/domain_dual_stlack_gobal_network.txt"
-        - "./custom_set/gobal/domain_dual_stlack_gobal_bt.txt"
-        - "./custom_set/gobal/domain_dual_stlack_gobal_stun.txt"
-        - "./custom_set/gobal/domain_dual_stlack_gobal_game.txt"
-        - "./geo_set/geosite_category-pt.txt"
         - "./geo_set/geosite_category-public-tracker.txt"
         - "./geo_set/geosite_xbox.txt"
         - "./geo_set/geosite_cloudflare.txt"

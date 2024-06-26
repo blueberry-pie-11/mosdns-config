@@ -10,14 +10,16 @@ api:
 
 # []string, 从其他配置文件载入 plugins 插件设置。
 # include 的插件会比本配置文件中的插件先初始化。
+# 配置文件会依次加载，部分文件调用上一文件中的插件，
+# 如无必要，请勿调整加载顺序。
 include:
   - "./module_set.yaml"
   - "./module_ecs.yaml"
   - "./module_dns.yaml"
   - "./module_ttl.yaml"
   - "./module_cdn.yaml"
+  - "./module_resp_checker.yaml"  
   - "./module_forward.yaml"
-  - "./module_resp_checker.yaml"
   - "./module_query.yaml"
 
 plugins:
@@ -87,11 +89,7 @@ plugins:
 
       # --------------------------------
       # 非域名列表内的域名查询
-      # 兜底查询，fallback查询，no_cn_ip
-      - exec: jump query_final_non_cn_ip
-
-      # 兜底查询，本地查询，cn_ip
-      - exec: jump query_final_cn_ip
+      - exec: jump query_final
 
   # 启动 udp 服务器。
   - tag: udp_server

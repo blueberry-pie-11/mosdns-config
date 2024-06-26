@@ -23,12 +23,19 @@ plugins:
           - qtype 65
           - "!qname { $domain_dual_stlack_local | $domain_dual_stlack_gobal | $domain_prefer_direct | $domain_prefer_cn }"
         exec: mark 1001
+      # # 屏蔽以下列表域名的AAAA记录
+      # - matches:
+      #     - qtype 28
+      #     - qname { $domain_prefer_proxy | $domain_prefer_gfw }
+      #   exec: mark 1001
       # 执行reject
       - matches: mark 1001
         exec: reject 3
-      # 返回上级sequence
-      # - exec: return
-      - exec: jump has_resp_sequence
+      # 返回响应结果
+      - matches: mark 1001
+        exec: jump has_resp_sequence
+      # 返回上一级sequence
+      - exec: return
   # -------------------------------------------------------------------
   #
   # 域名全栈查询，无A/AAAA过滤，允许https等类型查询
@@ -43,8 +50,9 @@ plugins:
         exec: $ecs_local
       - matches: mark 2001
         exec: $forward_local
-      # - exec: return
-      - exec: jump has_resp_sequence
+      - matches: mark 2001
+        exec: jump has_resp_sequence
+      - exec: return
 
   # dual_stlack域名，gobal
   - tag: query_dual_stlack_gobal
@@ -56,28 +64,43 @@ plugins:
         exec: $ecs_gobal
       - matches: mark 2002
         exec: $fallback_forward_gobal_and_local_sequence
-      # - exec: return
-      - exec: jump has_resp_sequence
+      - matches: mark 2002
+        exec: jump has_resp_sequence
+      - exec: return
   # -------------------------------------------------------------------
   #
   # 域名prefer_ipv4/6查询，存在A/AAAA单栈过滤，可能存在https等类型过滤
   #
-  # prefer_ipv4/6域名，代理，remote+gobal
+  # prefer_ipv4域名，代理，remote+gobal
   - tag: query_prefer_proxy
     type: sequence
     args:
       - matches: qname $domain_prefer_proxy
         exec: mark 2003
-      # - matches: mark 2003
-      #   exec: $prefer_ipv4
+      # prefer_ipv4
+      - matches: mark 2003
+        exec: prefer_ipv4
       - matches: mark 2003
         exec: $ecs_remote
+      # 优先屏蔽AAAA记录，减少不必要查询
+      - matches:
+          - mark 2003
+          - qtype 28
+        exec: reject 3
+      - matches:
+          - mark 2003
+          # - qtype 28
+        exec: jump has_resp_sequence
       - matches: mark 2003
         exec: $fallback_forward_remote_and_gobal_sequence
-      # 返回国内 ip 则 drop_resp
-      - exec: jump drop_cn_ip_sequence
-      # - exec: return
-      - exec: jump has_resp_sequence
+      # 返回国内 ip 则 reject 3
+      - matches:
+          - mark 2003
+          - resp_ip $ip_cn
+        exec: reject 3
+      - matches: mark 2003
+        exec: jump has_resp_sequence
+      - exec: return
 
   # prefer_ipv4/6域名，direct
   - tag: query_prefer_direct
@@ -86,13 +109,14 @@ plugins:
       - matches: qname $domain_prefer_direct
         exec: mark 2004
       # - matches: mark 2004
-      #   exec: $prefer_ipv6
+      #   exec: prefer_ipv6
       - matches: mark 2004
         exec: $ecs_local
       - matches: mark 2004
         exec: $forward_local
-      # - exec: return
-      - exec: jump has_resp_sequence
+      - matches: mark 2004
+        exec: jump has_resp_sequence
+      - exec: return
 
   # prefer_ipv4/6域名，gfw，remote+gobal
   - tag: query_prefer_gfw
@@ -100,16 +124,33 @@ plugins:
     args:
       - matches: qname $domain_prefer_gfw
         exec: mark 2005
+      # prefer_ipv4
       - matches: mark 2005
         exec: prefer_ipv4
       - matches: mark 2005
         exec: $ecs_remote
+      # 优先屏蔽AAAA记录，减少不必要查询
+      - matches:
+          - mark 2005
+          - qtype 28
+        exec: reject 3
+      - matches:
+          - mark 2005
+          # - qtype 28
+        exec: jump has_resp_sequence
       - matches: mark 2005
         exec: $fallback_forward_remote_and_gobal_sequence
-      # 返回国内 ip 则 drop_resp
-      - exec: jump drop_cn_ip_sequence
-      # - exec: return
-      - exec: jump has_resp_sequence
+      # # 返回国内 ip 则 drop_resp
+      # - matches: mark 2005
+      #   exec: jump drop_cn_ip_sequence
+      # 返回国内 ip 则 reject 3
+      - matches:
+          - mark 2005
+          - resp_ip $ip_cn
+        exec: reject 3
+      - matches: mark 2005
+        exec: jump has_resp_sequence
+      - exec: return
 
   # prefer_ipv4/6域名，cn
   - tag: query_prefer_cn
@@ -118,41 +159,55 @@ plugins:
       - matches: qname $domain_prefer_cn
         exec: mark 2006
       # - matches: mark 2006
-      #   exec: $prefer_ipv6
+      #   exec: prefer_ipv6
       - matches: mark 2006
         exec: $ecs_local
       - matches: mark 2006
         exec: $forward_local
-      # - exec: return
-      - exec: jump has_resp_sequence
+      - matches: mark 2006
+        exec: jump has_resp_sequence
+      - exec: return
 
   # -------------------------------------------------------------------
   #
-  # 非域名列表内的域名查询，优先使用remote+gobal查询，避免dns泄露
-  # forward_local禁止non_cn_ip记录响应，其它forward禁止cn_ip记录响应
-  #
-  # 兜底查询，fallback查询，仅允许non_cn_ip
-  - tag: query_final_non_cn_ip
-    type: sequence
-    args:
-      - exec: prefer_ipv4
-      - exec: $ecs_remote
-      - exec: $fallback_forward_remote_and_gobal_sequence
-      # 返回国内 ip 则 drop_resp
-      - exec: jump drop_cn_ip_sequence
-      # - exec: return
-      - exec: jump has_resp_sequence
+  # 非域名列表内的域名查询，先使用 ecs_local + forwrd_gobal 查询。
+  # 1.若响应为ip_cn，则丢弃响应并jump至 query_final_cn_ip 序列，然后forward_local查询；
+  # 2.若响应为非ip_cn或无响应，丢弃响应并jump至 query_final_no_cn_ip 序列，
 
-  # 兜底查询，cn查询，仅允许cn_ip
-  - tag: query_final_cn_ip
+  - tag: query_final
     type: sequence
     args:
-      # - exec: $prefer_ipv6
+      # 使用ecs_local + forward_gobal查询,判断响应是否为ip_cn，决定
+      # 是否使用forward_local进行local查询
+      # - exec: prefer_ipv4
       - exec: $ecs_local
-      - exec: $forward_local
-      # 返回非国内 ip 则 drop_resp
-      - exec: jump drop_non_cn_ip_sequence
-      # - exec: return
-      - exec: jump has_resp_sequence
+      - exec: $forward_gobal
+      # 返回国内 ip 则 mark 2007
+      - matches: resp_ip $ip_cn
+        exec: mark 2007
+      # 如果是 mark 2007，则drop_resp，然后进行local查询
+      - matches: mark 2007
+        exec: drop_resp
+      # 丢弃响应后，重新进行local查询
+      - matches: mark 2007
+        exec: jump query_final_cn_ip
+      # 对于non_cn_ip的响应，reject 3
+      - matches: mark 2007
+        exec: jump reject_non_cn_ip_sequence
+      # 判断是否有响应，若有则终止查询并返回结果。
+      - matches: mark 2007
+        exec: jump has_resp_sequence
+      # 如果是非ip_cn或无响应，则drep_resp
+      # - matches: "!resp_ip $ip_cn"
+      - matches: "!mark 2007"
+        exec: drop_resp
+      # 丢弃响应后，重新进行remote+gobal查询
+      - matches: "!mark 2007"
+        exec: jump query_final_no_cn_ip
+      # 判断是否有响应，若有则终止查询并返回结果。
+      # 由于无后续其它查询，所以无响应只会导致查询超时，不会返回结果。
+      - matches: "!mark 2007"
+        exec: jump has_resp_sequence
+      - exec: return
   # -------------------------------------------------------------------
   # -------------------------------------------------------------------

@@ -1,24 +1,5 @@
 plugins:
   #----------------------------------
-  # dns查询结果筛选
-  #
-  # 返回国内 ip 则 drop_resp
-  - tag: drop_cn_ip_sequence
-    type: sequence
-    args:
-      - matches: "resp_ip $ip_cn"
-        exec: drop_resp
-      - exec: return
-
-  # 返回非国内 ip 则 drop_resp
-  - tag: drop_non_cn_ip_sequence
-    type: sequence
-    args:
-      - matches: "!resp_ip $ip_cn"
-        exec: drop_resp
-      - exec: return
-
-  #----------------------------------
   # 有响应终止查询并返回结果
   - tag: has_resp_sequence
     type: sequence
@@ -27,3 +8,46 @@ plugins:
       # - exec: jump modify_ttl_sequence
       - matches: has_resp
         exec: accept
+
+  #----------------------------------
+  # dns查询结果筛选
+  #
+  # 返回国内 ip 则 reject 3
+  - tag: reject_cn_ip_sequence
+    type: sequence
+    args:
+      - matches: "resp_ip $ip_cn"
+        # exec: drop_resp
+        exec: reject 3
+      - exec: return
+
+  # 返回非国内 ip 则 reject 3
+  - tag: reject_non_cn_ip_sequence
+    type: sequence
+    args:
+      - matches: "!resp_ip $ip_cn"
+        exec: reject 3
+      - exec: return
+
+  # # 返回ipv6 则 reject 3,响应代码为：NOERROR
+  # - tag: drop_ipv6_resp_sequence
+  #   type: sequence
+  #   args:
+  #     # 匹配ipv6响应
+  #     # 存在问题，会匹配ipv4
+  #     - matches: resp_ip ::/0
+  #       exec: reject 3
+  #     - exec: return
+
+  #----------------------------------
+  # # dns查询类型筛选
+  # #
+  # # 丢弃ipv6查询请求
+  # - tag: drop_ipv6_query_sequence
+  #   type: sequence
+  #   args:
+  #     # 匹配AAAA记录
+  #     - matches: qtype 28
+  #       exec: reject 3
+  #     - matches: qtype 28
+  #       exec: jump has_resp_sequence

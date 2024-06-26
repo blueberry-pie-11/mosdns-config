@@ -9,7 +9,7 @@ plugins:
     args:
       primary: forward_gobal
       secondary: forward_local
-      threshold: 500
+      threshold: 300
       always_standby: false
 
   # 域名 fallback，先remote查询，超时后gobal查询
@@ -18,14 +18,23 @@ plugins:
     args:
       primary: forward_remote
       secondary: forward_gobal
-      threshold: 800
+      threshold: 600
       always_standby: false
 
-  # 域名 fallback，先gobal查询，超时后remote查询
-  - tag: fallback_forward_gobal_and_remote_sequence
-    type: fallback
+  # 兜底查询，fallback查询，仅允许non_cn_ip
+  - tag: query_final_no_cn_ip
+    type: sequence
     args:
-      primary: forward_gobal
-      secondary: forward_remote
-      threshold: 500
-      always_standby: false
+      - exec: prefer_ipv4
+      - exec: $ecs_remote
+      - exec: $fallback_forward_remote_and_gobal_sequence
+      - exec: return
+
+  # 兜底查询，local查询，仅允许cn_ip
+  - tag: query_final_cn_ip
+    type: sequence
+    args:
+      # - exec: prefer_ipv6
+      - exec: $ecs_local
+      - exec: $forward_local
+      - exec: return

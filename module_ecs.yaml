@@ -71,6 +71,7 @@ plugins:
       # 匹配AAAA记录
       - matches: qtype 28
         exec: $ecs_cn_ipv6
+      # 匹配其他
       - matches: "!qtype 28"
         exec: $ecs_cn_ipv4
       - exec: return
