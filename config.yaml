@@ -72,12 +72,8 @@ plugins:
       - exec: jump query_prefer_direct
 
       # --------------------------------
-      # dual_stack域名解析
-      # 查询全栈域名,local
-      - exec: jump query_dual_stlack_local
-
-      # 查询全栈域名,gobal
-      - exec: jump query_dual_stlack_gobal
+      # dual_stack域名解析，gobal+cn查询
+      - exec: jump query_dual_stlack
 
       # --------------------------------
       # prefer_ipv4/6域名解析

@@ -27,6 +27,11 @@ plugins:
     args:
       - exec: prefer_ipv4
       - exec: $ecs_remote
+
+      # 优先屏蔽AAAA记录，减少不必要查询
+      - matches: qtype 28
+        exec: reject 3
+
       - exec: $fallback_forward_remote_and_gobal_sequence
       - exec: return
 

@@ -10,55 +10,36 @@ plugins:
       - matches:
           - qtype 12
           - qname $local_ptr
-        exec: mark 1001
+        exec: mark 2001
       # 屏蔽 ANY
       - matches: qtype 255
-        exec: mark 1001
+        exec: mark 2001
       # 屏蔽private查询
       - matches:
           - qname $domain_private
-        exec: mark 1001
+        exec: mark 2001
       # 屏蔽以下列表域名的HTTPS记录
       - matches:
           - qtype 65
-          - "!qname { $domain_dual_stlack_local | $domain_dual_stlack_gobal | $domain_prefer_direct | $domain_prefer_cn }"
-        exec: mark 1001
-      # # 屏蔽以下列表域名的AAAA记录
-      # - matches:
-      #     - qtype 28
-      #     - qname { $domain_prefer_proxy | $domain_prefer_gfw }
-      #   exec: mark 1001
+          - "!qname { $domain_dual_stlack | $domain_prefer_direct | $domain_prefer_cn }"
+        exec: mark 2001
       # 执行reject
-      - matches: mark 1001
+      - matches: mark 2001
         exec: reject 3
       # 返回响应结果
-      - matches: mark 1001
+      - matches: mark 2001
         exec: jump has_resp_sequence
       # 返回上一级sequence
       - exec: return
   # -------------------------------------------------------------------
   #
   # 域名全栈查询，无A/AAAA过滤，允许https等类型查询
-  #
-  # dual_stlack域名，local
-  - tag: query_dual_stlack_local
-    type: sequence
-    args:
-      - matches: qname $domain_dual_stlack_local
-        exec: mark 2001
-      - matches: mark 2001
-        exec: $ecs_local
-      - matches: mark 2001
-        exec: $forward_local
-      - matches: mark 2001
-        exec: jump has_resp_sequence
-      - exec: return
 
-  # dual_stlack域名，gobal
-  - tag: query_dual_stlack_gobal
+  # dual_stlack域名，gobal+cn
+  - tag: query_dual_stlack
     type: sequence
     args:
-      - matches: qname $domain_dual_stlack_gobal
+      - matches: qname $domain_dual_stlack
         exec: mark 2002
       - matches: mark 2002
         exec: $ecs_gobal
@@ -87,10 +68,10 @@ plugins:
           - mark 2003
           - qtype 28
         exec: reject 3
-      - matches:
-          - mark 2003
-          # - qtype 28
-        exec: jump has_resp_sequence
+      # - matches:
+      #     - mark 2003
+      #     - qtype 28
+      #   exec: jump has_resp_sequence
       - matches: mark 2003
         exec: $fallback_forward_remote_and_gobal_sequence
       # 返回国内 ip 则 reject 3
@@ -134,15 +115,12 @@ plugins:
           - mark 2005
           - qtype 28
         exec: reject 3
-      - matches:
-          - mark 2005
-          # - qtype 28
-        exec: jump has_resp_sequence
+      # - matches:
+      #     - mark 2005
+      #     # - qtype 28
+      #   exec: jump has_resp_sequence
       - matches: mark 2005
         exec: $fallback_forward_remote_and_gobal_sequence
-      # # 返回国内 ip 则 drop_resp
-      # - matches: mark 2005
-      #   exec: jump drop_cn_ip_sequence
       # 返回国内 ip 则 reject 3
       - matches:
           - mark 2005
@@ -185,10 +163,11 @@ plugins:
       # 返回国内 ip 则 mark 2007
       - matches: resp_ip $ip_cn
         exec: mark 2007
-      # 如果是 mark 2007，则drop_resp，然后进行local查询
+
+      # 如果查询结果是ip_cn，则drop_resp，然后进行forward_local查询
       - matches: mark 2007
         exec: drop_resp
-      # 丢弃响应后，重新进行local查询
+      # 丢弃响应后，重新进行forward_local查询
       - matches: mark 2007
         exec: jump query_final_cn_ip
       # 对于non_cn_ip的响应，reject 3
@@ -197,11 +176,11 @@ plugins:
       # 判断是否有响应，若有则终止查询并返回结果。
       - matches: mark 2007
         exec: jump has_resp_sequence
-      # 如果是非ip_cn或无响应，则drep_resp
-      # - matches: "!resp_ip $ip_cn"
+
+      # 如果查询结果是非ip_cn或无响应，则drep_resp
       - matches: "!mark 2007"
         exec: drop_resp
-      # 丢弃响应后，重新进行remote+gobal查询
+      # 丢弃响应后，重新进行forward_remote+forward_gobal查询
       - matches: "!mark 2007"
         exec: jump query_final_no_cn_ip
       # 判断是否有响应，若有则终止查询并返回结果。

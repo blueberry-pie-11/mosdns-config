@@ -80,7 +80,7 @@ plugins:
   - tag: ecs_remote
     type: sequence
     args:
-      # - exec: $ecs_us_ipv4
+      - exec: $ecs_us_ipv4
       - exec: return
 
   # ecs_gobal，hk_ip

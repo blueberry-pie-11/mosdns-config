@@ -29,25 +29,3 @@ plugins:
         exec: reject 3
       - exec: return
 
-  # # 返回ipv6 则 reject 3,响应代码为：NOERROR
-  # - tag: drop_ipv6_resp_sequence
-  #   type: sequence
-  #   args:
-  #     # 匹配ipv6响应
-  #     # 存在问题，会匹配ipv4
-  #     - matches: resp_ip ::/0
-  #       exec: reject 3
-  #     - exec: return
-
-  #----------------------------------
-  # # dns查询类型筛选
-  # #
-  # # 丢弃ipv6查询请求
-  # - tag: drop_ipv6_query_sequence
-  #   type: sequence
-  #   args:
-  #     # 匹配AAAA记录
-  #     - matches: qtype 28
-  #       exec: reject 3
-  #     - matches: qtype 28
-  #       exec: jump has_resp_sequence
