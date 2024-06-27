@@ -18,7 +18,7 @@ include:
   - "./module_dns.yaml"
   - "./module_ttl.yaml"
   - "./module_cdn.yaml"
-  - "./module_resp_checker.yaml"
+  - "./module_resp_checker.yaml"  
   - "./module_forward.yaml"
   - "./module_query.yaml"
 
@@ -63,30 +63,25 @@ plugins:
       # # 当某一请求经过 cache 后，cache 会在这个请求处理流程结束时自动将应答放入缓存。用户无需介入。
       # - exec: $lazy_cache
       # - exec: jump has_resp_sequence
+      # --------------------------------
+      # prefer_ipv4/6域名解析
+      # 查询代理域名，remote+gobal，prefer_ipv4
+      - exec: jump query_prefer_proxy
+
+      # 查询直连域名
+      - exec: jump query_prefer_direct
 
       # --------------------------------
       # dual_stack域名解析，gobal+cn查询
-      - matches: qname $domain_dual_stlack
-        exec: jump query_dual_stlack
+      - exec: jump query_dual_stlack
 
       # --------------------------------
       # prefer_ipv4/6域名解析
-
-      # 查询代理域名，remote+gobal，prefer_ipv4
-      - matches: qname $domain_prefer_proxy
-        exec: jump query_prefer_proxy
-
-      # 查询直连域名
-      - matches: qname $domain_prefer_direct
-        exec: jump query_prefer_direct
-
       # 查询gfw域名
-      - matches: qname $domain_prefer_gfw
-        exec: jump query_prefer_gfw
+      - exec: jump query_prefer_gfw
 
       # 查询cn域名
-      - matches: qname $domain_prefer_cn
-        exec: jump query_prefer_cn
+      - exec: jump query_prefer_cn
 
       # --------------------------------
       # 非域名列表内的域名查询
