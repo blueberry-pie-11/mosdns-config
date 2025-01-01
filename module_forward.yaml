@@ -9,7 +9,7 @@ plugins:
     args:
       primary: forward_gobal
       secondary: forward_local
-      threshold: 300
+      threshold: 500
       always_standby: false
 
   # 域名 fallback，先remote查询，超时后gobal查询
@@ -18,7 +18,7 @@ plugins:
     args:
       primary: forward_remote
       secondary: forward_gobal
-      threshold: 600
+      threshold: 1000
       always_standby: false
 
   # 兜底查询，fallback查询，仅允许non_cn_ip

@@ -1,2263 +1,84 @@
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-05 12:00:11: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-06 00:00:01: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-06 00:00:19: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-06 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-06 12:00:10: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-07 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-07 00:00:17: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-07 12:00:01: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-07 12:00:13: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-08 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-08 00:00:11: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-08 08:10:34: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn telegram fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-08 08:10:46: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-08 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-08 12:00:11: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-09 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-09 00:00:19: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-09 12:00:01: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-09 12:00:13: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-10 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
+Deleting the old ./updater.log file...
+[INFO] Reading geoip tags from /docker/mosdns/data/module_set.yaml...
+[INFO] Reading geosite tags from /docker/mosdns/data/module_set.yaml...
+[NOTICE] GEOIP_TAGS: cn cloudflare fastly cloudfront private
+[NOTICE] GEOSITE_TAGS: win-update category-games@cn category-public-tracker cloudflare googlefcm category-games gfw tld-cn china-list private
 [NOTICE] check geoip sha256
 [NOTICE] get geoip sha256 successfully!
 [NOTICE] geoip is up to date!
-[NOTICE] download geoip
-[NOTICE] get geoip successfully!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-10 00:00:20: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-10 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-10 12:00:10: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-11 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-11 00:00:12: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-11 12:00:01: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-11 12:00:11: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-12 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-12 00:00:11: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-12 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-12 12:00:09: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-13 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-13 00:00:13: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-13 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-13 12:00:10: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-14 00:00:01: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-14 00:00:12: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-14 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-14 12:00:09: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-15 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-15 00:00:12: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-15 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-15 12:00:10: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-16 00:00:01: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-16 00:00:12: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-16 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-16 12:00:09: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-17 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is up to date!
-[NOTICE] download geoip
-[NOTICE] get geoip successfully!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-17 00:00:14: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-17 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-17 12:00:09: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-18 00:00:01: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-18 00:00:33: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-18 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-18 12:00:08: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-19 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-19 00:00:15: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-19 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-19 12:00:11: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-20 00:00:01: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-20 00:00:12: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-20 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-20 12:00:09: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-21 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-21 00:00:11: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-21 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-21 12:00:09: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-22 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-22 00:00:15: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-22 12:00:01: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-22 12:00:10: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-23 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-23 00:00:17: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-23 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-23 12:00:09: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-24 00:00:01: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is up to date!
-[NOTICE] download geoip
-[NOTICE] get geoip successfully!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-24 00:00:15: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-24 12:00:01: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-24 12:00:10: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-25 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-25 00:00:25: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-25 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-25 12:00:10: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-26 00:00:01: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-26 00:00:12: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-26 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-26 12:00:09: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-27 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-27 00:00:11: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-27 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-27 12:00:09: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-28 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-28 00:00:12: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-28 04:12:37: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-28 04:12:45: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-28 04:15:28: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] mosdns's geo files not need update
-2024-05-28 04:15:32: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-28 04:19:25: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
-[NOTICE] mosdns's geo files not need update
-2024-05-28 04:19:28: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-28 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-28 12:00:10: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-29 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-29 00:00:14: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-29 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-29 12:00:10: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-30 00:00:01: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-30 00:00:16: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-30 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-30 12:00:10: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-31 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is up to date!
-[NOTICE] geoip need update, download geoip data file
-[NOTICE] download geoip
-[NOTICE] get geoip successfully!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-05-31 00:00:21: updater finished!
-===============================================
-
-
-
-===============================================
-2024-05-31 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-05-31 12:00:10: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-01 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-01 00:00:24: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-01 12:00:01: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-06-01 12:00:11: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-02 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-02 00:00:13: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-02 11:53:18: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
-[NOTICE] unpack geosite
-[NOTICE] mosdns's geo files not need update
-2024-06-02 11:53:32: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-02 11:59:44: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-02 11:59:56: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-02 12:00:01: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-02 12:00:12: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-03 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-03 00:00:14: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-03 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-03 12:00:12: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-04 00:00:01: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-04 00:00:14: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-04 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-04 12:00:11: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-05 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is up to date!
-[NOTICE] geoip need update, download geoip data file
-[NOTICE] download geoip
-[NOTICE] get geoip successfully!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-05 00:00:37: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-05 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-05 12:00:11: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-06 00:00:01: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-06 00:00:19: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-06 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-06 12:00:12: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-07 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is up to date!
-[NOTICE] geoip need update, download geoip data file
-[NOTICE] download geoip
-[NOTICE] get geoip successfully!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-07 00:00:17: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-07 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-07 12:00:11: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-08 00:00:01: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[WARNING] get geoip sha256 failed!
-[NOTICE] geoip need update, download geoip data file
-[NOTICE] download geoip
-[WARNING] get geoip failed! please check your network!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[WARNING] get geosite sha256 failed!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[WARNING] get geosite failed! please check your network!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-08 00:00:22: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-08 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is up to date!
-[NOTICE] geoip need update, download geoip data file
-[NOTICE] download geoip
-[NOTICE] get geoip successfully!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-08 12:02:56: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-09 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-09 00:00:24: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-09 12:00:01: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[WARNING] get geosite sha256 failed!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[WARNING] get geosite failed! please check your network!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-09 12:01:07: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-10 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-10 00:00:12: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-10 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn google-cn tld-cn category-games@cn geolocation-!cn win-update private china-list gfw category-public-tracker category-pt xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-10 12:00:11: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-10 16:07:16: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-10 16:07:27: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-11 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-11 00:00:24: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-11 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-11 12:00:16: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-12 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-12 00:00:12: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-12 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-12 12:00:09: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-13 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-13 00:00:11: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-13 12:00:01: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-13 12:00:11: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-14 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is up to date!
-[NOTICE] geoip need update, download geoip data file
-[NOTICE] download geoip
-[NOTICE] get geoip successfully!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-14 00:00:13: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-14 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[WARNING] get geosite sha256 failed!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[WARNING] get geosite failed! please check your network!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-14 12:00:11: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-15 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-15 00:00:10: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-15 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-15 12:00:09: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-16 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-16 00:00:17: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-16 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-16 12:00:09: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-17 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-17 00:00:14: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-17 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-17 12:00:09: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-18 00:00:01: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-18 00:00:12: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-18 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-18 12:00:09: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-19 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is not up to date!
-[NOTICE] geoip don't need update
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-19 00:00:50: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-19 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[WARNING] get geoip sha256 failed!
 [NOTICE] geoip need update, download geoip data file
 [NOTICE] download geoip
 [WARNING] get geoip failed! please check your network!
 [NOTICE] unpack geoip
 [NOTICE] check geosite sha256
 [NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
+[NOTICE] geosite is up to date!
+[NOTICE] geosite need update, download geosite data file
+[NOTICE] download geosite
+[NOTICE] get geosite successfully!
 [NOTICE] unpack geosite
 [NOTICE] copy geo files to geo_set
 [NOTICE] restart mosdns...
-2024-06-19 12:00:49: updater finished!
+2024-12-27 00:00:22: updater finished!
 ===============================================
 
 
 
 ===============================================
-2024-06-20 00:00:01: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
+2024-12-27 12:00:00: starting updater...
+[INFO] Reading geoip tags from /docker/mosdns/data/module_set.yaml...
+[INFO] Reading geosite tags from /docker/mosdns/data/module_set.yaml...
+[NOTICE] GEOIP_TAGS: cn cloudflare fastly cloudfront private
+[NOTICE] GEOSITE_TAGS: win-update category-games@cn category-public-tracker cloudflare googlefcm category-games gfw tld-cn china-list private
 [NOTICE] check geoip sha256
 [NOTICE] get geoip sha256 successfully!
 [NOTICE] geoip is up to date!
 [NOTICE] geoip need update, download geoip data file
 [NOTICE] download geoip
 [NOTICE] get geoip successfully!
+[NOTICE] unpack geoip
+[NOTICE] check geosite sha256
+[NOTICE] get geosite sha256 successfully!
+[NOTICE] geosite is not up to date!
+[NOTICE] geosite don't need update
+[NOTICE] unpack geosite
+[NOTICE] copy geo files to geo_set
+[NOTICE] restart mosdns...
+2024-12-27 12:00:23: updater finished!
+===============================================
+
+
+
+===============================================
+2024-12-28 00:00:00: starting updater...
+[INFO] Reading geoip tags from /docker/mosdns/data/module_set.yaml...
+[INFO] Reading geosite tags from /docker/mosdns/data/module_set.yaml...
+[NOTICE] GEOIP_TAGS: cn cloudflare fastly cloudfront private
+[NOTICE] GEOSITE_TAGS: win-update category-games@cn category-public-tracker cloudflare googlefcm category-games gfw tld-cn china-list private
+[NOTICE] check geoip sha256
+[NOTICE] get geoip sha256 successfully!
+[NOTICE] geoip is not up to date!
+[NOTICE] geoip don't need update
 [NOTICE] unpack geoip
 [NOTICE] check geosite sha256
 [WARNING] get geosite sha256 failed!
 [NOTICE] geosite need update, download geosite data file
 [NOTICE] download geosite
-[WARNING] get geosite failed! please check your network!
+[NOTICE] get geosite successfully!
 [NOTICE] unpack geosite
 [NOTICE] copy geo files to geo_set
 [NOTICE] restart mosdns...
-2024-06-20 00:01:04: updater finished!
+2024-12-28 00:00:21: updater finished!
 ===============================================
 
 
 
 ===============================================
-2024-06-20 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
+2024-12-28 12:00:01: starting updater...
+[INFO] Reading geoip tags from /docker/mosdns/data/module_set.yaml...
+[INFO] Reading geosite tags from /docker/mosdns/data/module_set.yaml...
+[NOTICE] GEOIP_TAGS: cn cloudflare fastly cloudfront private
+[NOTICE] GEOSITE_TAGS: win-update category-games@cn category-public-tracker cloudflare googlefcm category-games gfw tld-cn china-list private
 [NOTICE] check geoip sha256
 [NOTICE] get geoip sha256 successfully!
 [NOTICE] geoip is not up to date!
@@ -2265,108 +86,50 @@
 [NOTICE] unpack geoip
 [NOTICE] check geosite sha256
 [NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
+[NOTICE] geosite is not up to date!
+[NOTICE] geosite don't need update
 [NOTICE] unpack geosite
 [NOTICE] copy geo files to geo_set
 [NOTICE] restart mosdns...
-2024-06-20 12:00:10: updater finished!
+2024-12-28 12:00:17: updater finished!
 ===============================================
 
 
 
 ===============================================
-2024-06-21 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
+2024-12-29 00:00:00: starting updater...
+[INFO] Reading geoip tags from /docker/mosdns/data/module_set.yaml...
+[INFO] Reading geosite tags from /docker/mosdns/data/module_set.yaml...
+[NOTICE] GEOIP_TAGS: cn cloudflare fastly cloudfront private
+[NOTICE] GEOSITE_TAGS: win-update category-games@cn category-public-tracker cloudflare googlefcm category-games gfw tld-cn china-list private
 [NOTICE] check geoip sha256
 [NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is up to date!
-[NOTICE] geoip need update, download geoip data file
-[NOTICE] download geoip
-[NOTICE] get geoip successfully!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-21 00:00:15: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-21 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[WARNING] get geoip sha256 failed!
-[NOTICE] geoip need update, download geoip data file
-[NOTICE] download geoip
-[WARNING] get geoip failed! please check your network!
+[NOTICE] geoip is not up to date!
+[NOTICE] geoip don't need update
 [NOTICE] unpack geoip
 [NOTICE] check geosite sha256
 [WARNING] get geosite sha256 failed!
 [NOTICE] geosite need update, download geosite data file
 [NOTICE] download geosite
-[WARNING] get geosite failed! please check your network!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-21 12:00:21: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-22 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is up to date!
-[NOTICE] geoip need update, download geoip data file
-[NOTICE] download geoip
-[NOTICE] get geoip successfully!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
 [NOTICE] get geosite successfully!
 [NOTICE] unpack geosite
 [NOTICE] copy geo files to geo_set
 [NOTICE] restart mosdns...
-2024-06-22 00:00:18: updater finished!
+2024-12-29 00:00:19: updater finished!
 ===============================================
 
 
 
 ===============================================
-2024-06-22 12:00:01: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
+2024-12-29 12:00:00: starting updater...
+[INFO] Reading geoip tags from /docker/mosdns/data/module_set.yaml...
+[INFO] Reading geosite tags from /docker/mosdns/data/module_set.yaml...
+[NOTICE] GEOIP_TAGS: cn cloudflare fastly cloudfront private
+[NOTICE] GEOSITE_TAGS: win-update category-games@cn category-public-tracker cloudflare googlefcm category-games gfw tld-cn china-list private
 [NOTICE] check geoip sha256
-[WARNING] get geoip sha256 failed!
-[NOTICE] geoip need update, download geoip data file
-[NOTICE] download geoip
-[NOTICE] get geoip successfully!
+[NOTICE] get geoip sha256 successfully!
+[NOTICE] geoip is not up to date!
+[NOTICE] geoip don't need update
 [NOTICE] unpack geoip
 [NOTICE] check geosite sha256
 [NOTICE] get geosite sha256 successfully!
@@ -2375,17 +138,17 @@
 [NOTICE] unpack geosite
 [NOTICE] copy geo files to geo_set
 [NOTICE] restart mosdns...
-2024-06-22 12:00:19: updater finished!
+2024-12-29 12:00:18: updater finished!
 ===============================================
 
 
 
 ===============================================
-2024-06-23 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
+2024-12-30 00:00:00: starting updater...
+[INFO] Reading geoip tags from /docker/mosdns/data/module_set.yaml...
+[INFO] Reading geosite tags from /docker/mosdns/data/module_set.yaml...
+[NOTICE] GEOIP_TAGS: cn cloudflare fastly cloudfront private
+[NOTICE] GEOSITE_TAGS: win-update category-games@cn category-public-tracker cloudflare googlefcm category-games gfw tld-cn china-list private
 [NOTICE] check geoip sha256
 [NOTICE] get geoip sha256 successfully!
 [NOTICE] geoip is not up to date!
@@ -2400,91 +163,41 @@
 [NOTICE] unpack geosite
 [NOTICE] copy geo files to geo_set
 [NOTICE] restart mosdns...
-2024-06-23 00:00:12: updater finished!
+2024-12-30 00:00:24: updater finished!
 ===============================================
 
 
 
 ===============================================
-2024-06-23 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[WARNING] get geoip sha256 failed!
-[NOTICE] geoip need update, download geoip data file
-[NOTICE] download geoip
-[NOTICE] get geoip successfully!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-23 12:00:12: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-24 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
-[NOTICE] check geoip sha256
-[NOTICE] get geoip sha256 successfully!
-[NOTICE] geoip is up to date!
-[NOTICE] geoip need update, download geoip data file
-[NOTICE] download geoip
-[NOTICE] get geoip successfully!
-[NOTICE] unpack geoip
-[NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is up to date!
-[NOTICE] geosite need update, download geosite data file
-[NOTICE] download geosite
-[NOTICE] get geosite successfully!
-[NOTICE] unpack geosite
-[NOTICE] copy geo files to geo_set
-[NOTICE] restart mosdns...
-2024-06-24 00:00:27: updater finished!
-===============================================
-
-
-
-===============================================
-2024-06-24 12:00:01: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
+2024-12-30 12:00:00: starting updater...
+[INFO] Reading geoip tags from /docker/mosdns/data/module_set.yaml...
+[INFO] Reading geosite tags from /docker/mosdns/data/module_set.yaml...
+[NOTICE] GEOIP_TAGS: cn cloudflare fastly cloudfront private
+[NOTICE] GEOSITE_TAGS: win-update category-games@cn category-public-tracker cloudflare googlefcm category-games gfw tld-cn china-list private
 [NOTICE] check geoip sha256
 [NOTICE] get geoip sha256 successfully!
 [NOTICE] geoip is not up to date!
 [NOTICE] geoip don't need update
 [NOTICE] unpack geoip
 [NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
+[WARNING] get geosite sha256 failed!
+[NOTICE] geosite need update, download geosite data file
+[NOTICE] download geosite
+[NOTICE] get geosite successfully!
 [NOTICE] unpack geosite
 [NOTICE] copy geo files to geo_set
 [NOTICE] restart mosdns...
-2024-06-24 12:00:14: updater finished!
+2024-12-30 12:00:24: updater finished!
 ===============================================
 
 
 
 ===============================================
-2024-06-25 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
+2024-12-31 00:00:01: starting updater...
+[INFO] Reading geoip tags from /docker/mosdns/data/module_set.yaml...
+[INFO] Reading geosite tags from /docker/mosdns/data/module_set.yaml...
+[NOTICE] GEOIP_TAGS: cn cloudflare fastly cloudfront private
+[NOTICE] GEOSITE_TAGS: win-update category-games@cn category-public-tracker cloudflare googlefcm category-games gfw tld-cn china-list private
 [NOTICE] check geoip sha256
 [NOTICE] get geoip sha256 successfully!
 [NOTICE] geoip is not up to date!
@@ -2499,17 +212,17 @@
 [NOTICE] unpack geosite
 [NOTICE] copy geo files to geo_set
 [NOTICE] restart mosdns...
-2024-06-25 00:00:12: updater finished!
+2024-12-31 00:00:25: updater finished!
 ===============================================
 
 
 
 ===============================================
-2024-06-25 12:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
+2024-12-31 12:00:00: starting updater...
+[INFO] Reading geoip tags from /docker/mosdns/data/module_set.yaml...
+[INFO] Reading geosite tags from /docker/mosdns/data/module_set.yaml...
+[NOTICE] GEOIP_TAGS: cn cloudflare fastly cloudfront private
+[NOTICE] GEOSITE_TAGS: win-update category-games@cn category-public-tracker cloudflare googlefcm category-games gfw tld-cn china-list private
 [NOTICE] check geoip sha256
 [NOTICE] get geoip sha256 successfully!
 [NOTICE] geoip is not up to date!
@@ -2522,22 +235,21 @@
 [NOTICE] unpack geosite
 [NOTICE] copy geo files to geo_set
 [NOTICE] restart mosdns...
-2024-06-25 12:00:10: updater finished!
+2024-12-31 12:00:20: updater finished!
 ===============================================
 
 
 
 ===============================================
-2024-06-26 00:00:00: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
+2025-01-01 00:00:00: starting updater...
+[INFO] Reading geoip tags from /docker/mosdns/data/module_set.yaml...
+[INFO] Reading geosite tags from /docker/mosdns/data/module_set.yaml...
+[NOTICE] GEOIP_TAGS: cn cloudflare fastly cloudfront private
+[NOTICE] GEOSITE_TAGS: win-update category-games@cn category-public-tracker cloudflare googlefcm category-games gfw tld-cn china-list private
 [NOTICE] check geoip sha256
-[WARNING] get geoip sha256 failed!
-[NOTICE] geoip need update, download geoip data file
-[NOTICE] download geoip
-[NOTICE] get geoip successfully!
+[NOTICE] get geoip sha256 successfully!
+[NOTICE] geoip is not up to date!
+[NOTICE] geoip don't need update
 [NOTICE] unpack geoip
 [NOTICE] check geosite sha256
 [NOTICE] get geosite sha256 successfully!
@@ -2548,30 +260,31 @@
 [NOTICE] unpack geosite
 [NOTICE] copy geo files to geo_set
 [NOTICE] restart mosdns...
-2024-06-26 00:00:18: updater finished!
+2025-01-01 00:00:22: updater finished!
 ===============================================
 
 
 
 ===============================================
-2024-06-26 04:48:15: starting updater...
-[INFO] Reading geoip tags from ./tags/geoip_tags.txt...
-[INFO] Reading geosite tags from ./tags/geosite_tags.txt...
-[NOTICE] GEOIP_TAGS: cloudflare cloudfront cn fastly private
-[NOTICE] GEOSITE_TAGS: cn apple-cn tld-cn category-games@cn win-update private china-list gfw category-public-tracker xbox googlefcm cloudflare
+2025-01-01 12:00:00: starting updater...
+[INFO] Reading geoip tags from /docker/mosdns/data/module_set.yaml...
+[INFO] Reading geosite tags from /docker/mosdns/data/module_set.yaml...
+[NOTICE] GEOIP_TAGS: cn cloudflare fastly cloudfront private
+[NOTICE] GEOSITE_TAGS: win-update category-games@cn category-public-tracker cloudflare googlefcm category-games gfw tld-cn china-list private
 [NOTICE] check geoip sha256
 [NOTICE] get geoip sha256 successfully!
 [NOTICE] geoip is not up to date!
 [NOTICE] geoip don't need update
 [NOTICE] unpack geoip
 [NOTICE] check geosite sha256
-[NOTICE] get geosite sha256 successfully!
-[NOTICE] geosite is not up to date!
-[NOTICE] geosite don't need update
+[WARNING] get geosite sha256 failed!
+[NOTICE] geosite need update, download geosite data file
+[NOTICE] download geosite
+[NOTICE] get geosite successfully!
 [NOTICE] unpack geosite
 [NOTICE] copy geo files to geo_set
 [NOTICE] restart mosdns...
-2024-06-26 04:48:25: updater finished!
+2025-01-01 12:00:21: updater finished!
 ===============================================
 
 

@@ -1,20 +1,8 @@
-#!/bin/bash
+#! /bin/bash
 
-# 设置默认变量
-# LOG_FILE="./updater.log"
-# RULES_DIR="rules"
-# DOWNLOAD_DIR="download"
-# MOSDNS_GEO_SET_DIR="/docker/mosdns/data/geo_set"
-# GEOIP_TAGS_URL="./tags/geoip_tags.txt"
-# GEOSITE_TAGS_URL="./tags/geosite_tags.txt"
-# GEOIP_NAME="geoip.dat"
-# GEOSITE_NAME="geosite.dat"
-# GEOIP_SHA_NAME="geoip.dat.sha256sum"
-# GEOSITE_SHA_NAME="geosite.dat.sha256sum"
-# GEOIP_SHA_DL_URL="https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat.sha256sum"
-# GEOSITE_SHA_DL_URL="https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat.sha256sum"
-# GEOIP_DL_URL=https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
-# GEOSITE_DL_URL=https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
+# 初始化
+GEOIP_TAGS=()
+GEOSITE_TAGS=()
 
 # Initialize variables from config.yml file
 # Read variables from config.yml and set default values
@@ -22,8 +10,8 @@ init() {
     local config_file="$1"
     # 从config.yml中读取变量，并设置默认值
     while IFS= read -r line; do
-        # 排除\r 和 \n
-        if [[ $line != $'\n' ]] && [[ $line != $'\r' ]]; then
+        # 排除\r 、 \n 和注释
+        if [[ $line != $'\n' ]] && [[ $line != $'\r' ]] && [[ $line != *#* ]]; then
             # 替换": "为"#",方便进行字符串分割，防止出现http链接被错误分割
             line=$(echo "$line" | sed 's/\r$//' | sed 's/:\s*/#/')
             # 将$line使用 "#" 分割成key、value，并去除value首位可能存在的引号以及空格
@@ -62,23 +50,59 @@ function create_dir() {
 #
 # The function also prints the tags to the log file.
 function get_tags() {
+
+    # 旧版tag获取方法
+    # echo "[INFO] Reading geoip tags from $GEOIP_TAGS_URL..." >>"$LOG_FILE"
+    # while IFS= read -r line; do
+    #     # 排除\r 和 \n
+    #     if [[ $line != $'\n' ]] && [[ $line != $'\r' ]]; then
+    #         line=$(echo "$line" | sed 's/\r$//')
+    #         GEOIP_TAGS+=("$line")
+    #     fi
+    # done <"$GEOIP_TAGS_URL"
+
+    # echo "[INFO] Reading geosite tags from $GEOSITE_TAGS_URL..." >>"$LOG_FILE"
+    # echo "[INFO] Reading geosite tags from module_set.yaml..." >>"$LOG_FILE"
+    # while IFS= read -r line; do
+    #     if [[ $line != $'\n' ]] && [[ $line != $'\r' ]]; then
+    #         line=$(echo "$line" | sed 's/\r$//')
+    #         GEOSITE_TAGS+=("$line")
+    #     fi
+    # done <"$GEOSITE_TAGS_URL"
+
+    # 新版tag获取方法
     echo "[INFO] Reading geoip tags from $GEOIP_TAGS_URL..." >>"$LOG_FILE"
     while IFS= read -r line; do
-        # 排除\r 和 \n
-        if [[ $line != $'\n' ]] && [[ $line != $'\r' ]]; then
-            line=$(echo "$line" | sed 's/\r$//')
-            GEOIP_TAGS+=("$line")
+        line=$(echo "$line" | grep 'geoip_')
+        # 判断是否为有效行或者注释
+        if [[ $line != "" ]] && [[ $line != *#* ]]; then
+            temp_ip_tag=$(echo $line | sed 's/\.txt\"//' | sed 's/-\s\"\.\/geo_set\/geoip_//')
+            # echo "temp_ip_tag===${temp_ip_tag}"
+
+            # 去除\r、\n、首尾空格
+            GEOIP_TAGS+=("$(echo "$temp_ip_tag" | sed 's/\r$//' | sed 's/^\s*//' | sed 's/\s*$//')")
+            # echo "GEOIP_TAGS===${GEOIP_TAGS[@]}"
+
         fi
     done <"$GEOIP_TAGS_URL"
 
     echo "[INFO] Reading geosite tags from $GEOSITE_TAGS_URL..." >>"$LOG_FILE"
     while IFS= read -r line; do
-        if [[ $line != $'\n' ]] && [[ $line != $'\r' ]]; then
-            line=$(echo "$line" | sed 's/\r$//')
-            GEOSITE_TAGS+=("$line")
+        line=$(echo "$line" | grep 'geosite_')
+        # 判断是否为有效行或者注释
+        if [[ $line != "" ]] && [[ $line != *#* ]]; then
+            temp_site_tag=$(echo $line | sed 's/\.txt\"//' | sed 's/-\s\"\.\/geo_set\/geosite_//')
+            # echo "temp_site_tag===${temp_site_tag}"
+
+            # 去除\r、\n、首尾空格
+            GEOSITE_TAGS+=("$(echo "$temp_site_tag" | sed 's/\r$//' | sed 's/^\s*//' | sed 's/\s*$//')")
+            # echo "GEOSITE_TAGS===${GEOSITE_TAGS[@]}"
+
         fi
     done <"$GEOSITE_TAGS_URL"
 
+    # echo "[INFO] GEOIP_TAGS[@]===${GEOIP_TAGS[@]}"
+    # echo "[INFO] GEOSITE_TAGS[@]===${GEOSITE_TAGS[@]}"
     echo "[NOTICE] GEOIP_TAGS: ${GEOIP_TAGS[@]}" >>"$LOG_FILE"
     echo "[NOTICE] GEOSITE_TAGS: ${GEOSITE_TAGS[@]}" >>"$LOG_FILE"
 }
@@ -207,16 +231,15 @@ function unpack_geodata() {
 #
 #
 # 初始化，从config.yml中读取变量，并设置全局变量
-init "./config.yml"
+init "./config.conf"
 # echo "Log File: $LOG_FILE"
 # echo "GEOIP_SHA_DL_URL: $GEOIP_SHA_DL_URL"
 echo "===============================================" >>"$LOG_FILE"
 echo "$(date +'%Y-%m-%d %H:%M:%S'): starting updater..." >>"$LOG_FILE"
 # create rules and download directory
 create_dir
-# 从文件geoip_tags.txt中读取数组GEOIP_TAGS，从geosite_tags.txt中读取数组GEOSITE_TAGS
-GEOIP_TAGS=()
-GEOSITE_TAGS=()
+
+# 获取数组TAGS
 get_tags
 # echo "GEOIP_TAGS: ${GEOIP_TAGS[@]}"
 # echo "GEOSITE_TAGS: ${GEOSITE_TAGS[@]}"
@@ -265,6 +288,7 @@ cp $RULES_DIR/*.txt $MOSDNS_GEO_SET_DIR/ -Rf
 # 重启mosdns
 echo "[NOTICE] restart mosdns..." >>$LOG_FILE
 docker restart mosdns
+# rc-service mosdns restart
 
 # if [ $geoip_need_update == 1 ] || [ $geosite_need_update == 1 ]; then
 #     # geoip or geosite 导出文件需要更新

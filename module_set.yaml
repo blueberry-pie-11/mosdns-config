@@ -1,8 +1,23 @@
 plugins:
   # -------------------------------------------------------------------
   # 域名集
+  # 代理域名，prefer_ipv4，remote+gobal
+  - tag: domain_prefer_proxy
+    type: domain_set
+    args:
+      files:
+        - "./others_set/domain_prefer_proxy.txt"
 
-  # dual_stlack域名，gobal+cn查询
+  # 直连域名，prefer_ipv4/6，local
+  - tag: domain_prefer_direct
+    type: domain_set
+    args:
+      files:
+        - "./others_set/domain_prefer_direct.txt"
+        - "./geo_set/geosite_win-update.txt"
+        - "./geo_set/geosite_category-games@cn.txt"
+
+  # 双栈域名，prefer_ipv4/6，gobal+local
   - tag: domain_dual_stlack
     type: domain_set
     args:
@@ -14,36 +29,18 @@ plugins:
         - "./others_set/domain_dual_stlack_stun.txt"
         - "./others_set/domain_dual_stlack_game.txt"
         - "./geo_set/geosite_category-public-tracker.txt"
-        - "./geo_set/geosite_xbox.txt"
         - "./geo_set/geosite_cloudflare.txt"
         - "./geo_set/geosite_googlefcm.txt"
+        - "./geo_set/geosite_category-games.txt"
 
-  # prefer_ipv4/6域名，代理，remote+gobal
-  - tag: domain_prefer_proxy
-    type: domain_set
-    args:
-      files:
-        - "./others_set/domain_prefer_proxy.txt"
-
-  # prefer_ipv4/6域名，direct
-  - tag: domain_prefer_direct
-    type: domain_set
-    args:
-      files:
-        - "./others_set/domain_prefer_direct.txt"
-        - "./geo_set/geosite_apple-cn.txt"
-        # - "./geo_set/geosite_google-cn.txt"
-        - "./geo_set/geosite_win-update.txt"
-        - "./geo_set/geosite_category-games@cn.txt"
-
-  # prefer_ipv4/6域名，gfw，remote+gobal
+  # gfw域名，prefer_ipv4，remote+gobal
   - tag: domain_prefer_gfw
     type: domain_set
     args:
       files:
-        - "./geo_set/geosite_gfw.txt"
+        - "./geo_set/geosite_gfw.txt"   
 
-  # prefer_ipv4/6域名，cn
+  # cn域名，prefer_ipv4/6，local
   - tag: domain_prefer_cn
     type: domain_set
     args:

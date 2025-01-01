@@ -16,7 +16,9 @@ plugins:
   - tag: reject_cn_ip_sequence
     type: sequence
     args:
-      - matches: "resp_ip $ip_cn"
+      - matches:
+          - has_resp
+          - resp_ip $ip_cn
         # exec: drop_resp
         exec: reject 3
       - exec: return
@@ -25,7 +27,8 @@ plugins:
   - tag: reject_non_cn_ip_sequence
     type: sequence
     args:
-      - matches: "!resp_ip $ip_cn"
+      - matches:
+          - has_resp
+          - "!resp_ip $ip_cn"
         exec: reject 3
       - exec: return
-

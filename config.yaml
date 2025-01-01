@@ -65,26 +65,25 @@ plugins:
       # - exec: jump has_resp_sequence
 
       # --------------------------------
-      # dual_stack域名解析，gobal+cn查询
-      - matches: qname $domain_dual_stlack
-        exec: jump query_dual_stlack
-
-      # --------------------------------
-      # prefer_ipv4/6域名解析
+      # 域名解析
 
       # 查询代理域名，remote+gobal，prefer_ipv4
       - matches: qname $domain_prefer_proxy
         exec: jump query_prefer_proxy
 
-      # 查询直连域名
+      # 查询直连域名，local，prefer_ipv4/6
       - matches: qname $domain_prefer_direct
         exec: jump query_prefer_direct
 
-      # 查询gfw域名
+      # 查询gfw域名，remote+gobal，prefer_ipv4
       - matches: qname $domain_prefer_gfw
         exec: jump query_prefer_gfw
 
-      # 查询cn域名
+      # 双栈解析域名，gobal+local，prefer_ipv4/6
+      - matches: qname $domain_dual_stlack
+        exec: jump query_dual_stlack
+
+      # 查询cn域名，local，prefer_ipv4/6
       - matches: qname $domain_prefer_cn
         exec: jump query_prefer_cn
 

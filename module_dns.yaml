@@ -8,7 +8,8 @@ plugins:
       concurrent: 2
       upstreams:
         # 本上游的 tag。用于标识和 log。
-        # 阿里dns，支持ecs
+        # 阿里dns，支持ecs，加密dns已经执行20qps限制。
+        # 阿里DOH
         - tag: alidns_doh
           # addr 必需。服务器地址。省略 scheme 默认为 UDP 协议，省略端口号会使用协议的默认值。
           # 支持 IP 和域名。
@@ -42,10 +43,16 @@ plugins:
         - tag: alidns_doh_2
           addr: "https://dns.alidns.com/dns-query"
           dial_addr: "2400:3200::1"
-          # addr: "https://[2400:3200::1]/dns-query"
           idle_timeout: 30
           enable_pipeline: false
           enable_http3: false
+        - tag: alidns_doh_3
+          addr: "https://dns.alidns.com/dns-query"
+          dial_addr: "2400:3200:baba::1"
+          idle_timeout: 30
+          enable_pipeline: false
+          enable_http3: false
+        # 阿里DOT
         - tag: alidns_dot
           # addr: "tls://223.6.6.6"
           addr: "tls://dns.alidns.com"
@@ -55,22 +62,36 @@ plugins:
           enable_http3: false
         - tag: alidns_dot_2
           addr: "tls://dns.alidns.com"
+          dial_addr: "2400:3200::1"
+          idle_timeout: 10
+          enable_pipeline: true
+          enable_http3: false
+        - tag: alidns_dot_3
+          addr: "tls://dns.alidns.com"
           dial_addr: "2400:3200:baba::1"
           idle_timeout: 10
           enable_pipeline: true
           enable_http3: false
-        - tag: alidns_doq
-          addr: "quic://dns.alidns.com"
-          dial_addr: "223.5.5.5"
-          idle_timeout: 30
-          enable_pipeline: false
-          enable_http3: false
-        - tag: alidns_doq_2
-          addr: "quic://dns.alidns.com"
-          dial_addr: "2400:3200::1"
-          idle_timeout: 30
-          enable_pipeline: false
-          enable_http3: false
+        # # 阿里DOQ
+        # - tag: alidns_doq
+        #   addr: "quic://dns.alidns.com"
+        #   dial_addr: "223.5.5.5"
+        #   idle_timeout: 30
+        #   enable_pipeline: false
+        #   enable_http3: false
+        # - tag: alidns_doq_2
+        #   addr: "quic://dns.alidns.com"
+        #   dial_addr: "2400:3200::1"
+        #   idle_timeout: 30
+        #   enable_pipeline: false
+        #   enable_http3: false
+        # - tag: alidns_doq_3
+        #   addr: "quic://dns.alidns.com"
+        #   dial_addr: "2400:3200:baba::1"
+        #   idle_timeout: 30
+        #   enable_pipeline: false
+        #   enable_http3: false
+        # 阿里DOH3
         - tag: alidns_doh3
           addr: "https://dns.alidns.com/dns-query"
           dial_addr: "223.6.6.6"
@@ -79,22 +100,22 @@ plugins:
           enable_http3: true
         - tag: alidns_doh3_2
           addr: "https://dns.alidns.com/dns-query"
+          dial_addr: "2400:3200::1"
+          idle_timeout: 30
+          enable_pipeline: false
+          enable_http3: true
+        - tag: alidns_doh3_3
+          addr: "https://dns.alidns.com/dns-query"
           dial_addr: "2400:3200:baba::1"
           idle_timeout: 30
           enable_pipeline: false
           enable_http3: true
 
         # 备用设置
-        # 360dns，不支持ecs
-        # - tag: 360dns_doh
-        #   addr: "https://doh.360.cn/dns-query"
-        #   bootstrap: "119.29.29.29"
-        #   idle_timeout: 30
-        #   enable_pipeline: false
-        #   enable_http3: false
-
-        # # 腾讯dnspod，支持ecs
-        # # 垃圾dns，自带20Qps限制，且ecs不完整，不推荐
+        # 腾讯dnspod，支持ecs，自带20Qps限制，且ecs不完整，不推荐
+        # 江苏移动存在BGP问题。
+        # 1.12.12.12 被路由到深圳
+        # DOH
         - tag: dnspod_doh
           addr: "https://1.12.12.12/dns-query"
           idle_timeout: 30
@@ -106,6 +127,7 @@ plugins:
           idle_timeout: 30
           enable_pipeline: false
           enable_http3: false
+        # DOT
         - tag: dnspod_dot
           addr: "tls://1.12.12.12"
           idle_timeout: 10
@@ -122,14 +144,16 @@ plugins:
         # 移动dns
         # - tag: cmcc_udp
         #   addr: "221.131.143.69"
-        # - tag: local
-        #   addr: "127.0.0.1"
+        # - tag: cmcc_udp_2
+        #   addr: "2409:8020:2000::88"
+        # - tag: cmcc_udp_2
+        #   addr: "2409:8020:2000::8"
 
   # 远程服务器
   - tag: forward_remote
     type: forward
     args:
-      concurrent: 2
+      concurrent: 1
       upstreams:
         # 谷歌dns，支持ecs
         - tag: google_dns_doh
@@ -137,12 +161,6 @@ plugins:
           idle_timeout: 30
           enable_pipeline: false
           enable_http3: false
-        # - tag: google_dns_doh_2
-        #   addr: "https://dns.google/dns-query"
-        #   dial_addr: "8.8.8.8"
-        #   idle_timeout: 30
-        #   enable_pipeline: false
-        #   enable_http3: false
         # - tag: google_dns_doh3
         #   addr: "https://8.8.8.8/dns-query"
         #   idle_timeout: 30
@@ -150,12 +168,6 @@ plugins:
         #   enable_http3: true
         # - tag: google_dns_dot
         #   addr: "tls://8.8.8.8"
-        #   idle_timeout: 10
-        #   enable_pipeline: true
-        #   enable_http3: false
-        # - tag: google_dns_dot_2
-        #   addr: "tls://dns.google"
-        #   dial_addr: "8.8.8.8"
         #   idle_timeout: 10
         #   enable_pipeline: true
         #   enable_http3: false
@@ -185,18 +197,18 @@ plugins:
         #   enable_pipeline: true
         #   enable_http3: false
 
-        # # cloudflare dns，不支持ecs
-        # - tag: cloudflare_doh
-        #   addr: "https://1.1.1.1/dns-query"
-        #   idle_timeout: 30          
-        #   enable_pipeline: false
-        #   enable_http3: false
+        # cloudflare dns，不支持ecs
+        - tag: cloudflare_doh
+          addr: "https://1.1.1.1/dns-query"
+          idle_timeout: 30
+          enable_pipeline: false
+          enable_http3: false
 
   # gobal服务器
   - tag: forward_gobal
     type: forward
     args:
-      concurrent: 2
+      concurrent: 3
       upstreams:
         # # 思科dns，香港节点，该节点不支持ecs
         # - tag: cisco_opendns_doh
@@ -243,26 +255,26 @@ plugins:
           idle_timeout: 10
           enable_pipeline: true
           enable_http3: false
-        - tag: google_dns_dot_2
-          addr: "tls://[2001:4860:4860::8888]"
-          idle_timeout: 10
-          enable_pipeline: true
-          enable_http3: false
-        - tag: google_dns_dot_3
-          addr: "tls://[2001:4860:4860::8844]"
-          idle_timeout: 10
-          enable_pipeline: true
-          enable_http3: false
+        # - tag: google_dns_dot_2
+        #   addr: "tls://[2001:4860:4860::8888]"
+        #   idle_timeout: 10
+        #   enable_pipeline: true
+        #   enable_http3: false
+        # - tag: google_dns_dot_3
+        #   addr: "tls://[2001:4860:4860::8844]"
+        #   idle_timeout: 10
+        #   enable_pipeline: true
+        #   enable_http3: false
         # - tag: google_dns_doh3
         #   addr: "https://8.8.4.4/dns-query"
         #   idle_timeout: 30
         #   enable_pipeline: false
         #   enable_http3: true
-        - tag: google_dns_doh3_2
-          addr: "https://[2001:4860:4860::8888]/dns-query"
-          idle_timeout: 30
-          enable_pipeline: false
-          enable_http3: true
+        # - tag: google_dns_doh3_2
+        #   addr: "https://[2001:4860:4860::8888]/dns-query"
+        #   idle_timeout: 30
+        #   enable_pipeline: false
+        #   enable_http3: true
         # - tag: google_dns_doh3_3
         #   addr: "https://[2001:4860:4860::8844]/dns-query"
         #   idle_timeout: 30
@@ -271,11 +283,11 @@ plugins:
 
         # cloudflare dns，不支持ecs
         # cloudflare dns
-        # - tag: cloudflare_dot
-        #   addr: "tls://1.0.0.1"
-        #   idle_timeout: 10
-        #   enable_pipeline: true
-        #   enable_http3: false
+        - tag: cloudflare_dot
+          addr: "tls://1.0.0.1"
+          idle_timeout: 10
+          enable_pipeline: true
+          enable_http3: false
         # - tag: cloudflare_doh
         #   addr: "https://1.0.0.1/dns-query"
         #   idle_timeout: 30
